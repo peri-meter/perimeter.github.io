@@ -550,11 +550,11 @@ nav .logo.space{
 @media(max-width:1024px){
   .hexagon-gallery{
     align-items: center;
-    padding-left: -4rem;
+    padding-left: -10rem;
   }
   .hex{
-    width: 200px;
-    height: 215px;
+    width: 185px;
+    height: 200px;
   }
   .hex .names .text h1{
     color: #232b56;
