@@ -259,7 +259,7 @@ nav .logo.space{
     display: flex;
 }
 .head-about img{
-  height: fit-content;
+  height: 55px;
 }
  .head-about h1{
     flex: 1;
