@@ -727,13 +727,13 @@ nav .logo.space{
   }
   .hex .names .text h1{
     color: #232b56;
-    font-size: 1.7rem;
-    text-align: start;
+    font-size: 1rem;
+    text-align: center;
     text-transform: none;
   }
   .hex .names .text p{
     color: #fff;
-    font-size: 1rem;
+    font-size: .7rem;
     text-align: center;
   }
 
