@@ -797,10 +797,13 @@ nav .logo.space{
 
 
 .contact{
-  padding: 2rem 0%;
+  padding: 0rem 7%;
   padding-bottom: 0px;
 }
-
+ .foot{
+   padding: 2rem 0%;
+   padding-bottom: 0px;
+ }
 footer{
   min-height: 250px;
   background: #232b56;
