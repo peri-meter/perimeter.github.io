@@ -61,7 +61,7 @@ nav form{
   display: flex;
   height: 40px;
   padding: 2px ;
-  background: #232b56;
+  background: #efefef;
   min-width: 18%!important;
   border-radius: 2px;
   border: 1px solid rgba(155,155,155,0.2);
@@ -70,8 +70,8 @@ nav form .search-data{
   width: 100%;
   height: 100%;
   padding: 0 10px;
-  color: #fff;
-  font-size: 17px;
+  color: #232b56;
+  font-size: 14px;
   border: none;
   font-weight: 500;
   background: none;
@@ -301,7 +301,7 @@ nav .logo.space{
     padding-bottom: 1rem;
 }
 .card p{
-    color: #232b56;
+    color: #979797;
     text-align: center;
     font-size: 1.1rem;
 }
@@ -335,6 +335,9 @@ nav .logo.space{
 .head-share{
     color: #232b56;
     
+}
+.head-share p{
+  color: #979797;
 }
 .head-share h1 {
     padding-bottom: 1rem;
@@ -430,6 +433,12 @@ nav .logo.space{
   padding: 0px 0 0 20px;
 }
 */
+.head-org p{
+  color: #979797;
+  padding-top: 2rem;
+  text-transform: none;
+
+}
 .hex img {
   opacity: 1;
   width: 100%;
@@ -441,17 +450,17 @@ nav .logo.space{
 }
 
 .hexagon-gallery {
-    margin-left: -6rem;
-    margin-top: 50px;
+    margin-left: -1rem;
+    margin-top: 30px;
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(0, 1fr);
-    grid-auto-rows: 170px;
+    grid-auto-rows: 150px;
     grid-gap: 14px;
     padding-bottom: 50px;
   }
   .hex  .names{
-   
+    
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -463,13 +472,15 @@ nav .logo.space{
   
 }
   .hex .names .text h1{
+    white-space: nowrap;
+    overflow: hidden;
     color: #232b56;
-    font-size: 1.5rem;
-    text-align: start;
+    font-size: 1rem;
     text-transform: none;
+    text-align: center;
   }
   .hex .names .text p{
-    color: #fff;
+    color: #232b56;
     font-size: .8rem;
     text-align: center;
   }
@@ -478,8 +489,8 @@ nav .logo.space{
   cursor: pointer;
   display: flex;
   position: relative;
-  width: 210px;
-  height: 225px;
+  width: 185px;
+  height: 200px;
   background-color: #f0be38;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -553,8 +564,8 @@ nav .logo.space{
     padding-left: -10rem;
   }
   .hex{
-    width: 185px;
-    height: 200px;
+    width: 170px;
+    height: 185px;
   }
   .hex .names .text h1{
     color: #232b56;
@@ -937,8 +948,6 @@ footer .social a{
   color:#fff;
   cursor: pointer;
 }
-
-
 
 
 

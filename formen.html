@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,14 +31,14 @@
            <span class="fas fa-bars"></span>
         </div>
         <div class="logo">
-          <a href="index.html#home"><img src="Selam.Logo.w.under.formation.png" alt="" width="230"></a>
+          <a href="index.php#home"><img src="Selam.Logo.w.under.formation.png" alt="" width="230"></a>
         </div>
         <div class="nav-items">
-           <li><a href="index.html#home">Home</a></li>
-           <li><a href="index.html#about">About</a></li>
-           <li><a href="index.html#shares">Shares</a></li>
-           <li><a href="index.html#contact">Contact</a></li>
-           <li><a href="index.html#investor">Investor Relations</a></li>
+           <li><a href="index.php#home">Home</a></li>
+           <li><a href="index.php#about">About</a></li>
+           <li><a href="index.php#shares">Shares</a></li>
+           <li><a href="index.php#contact">Contact</a></li>
+           <li><a href="index.php#investor">Investor Relations</a></li>
         </div>
         <div class="search-icon">
            <span class="fas fa-search"></span>
@@ -90,41 +93,232 @@
           cancelBtn.classList.add("show");
         }
      </script>
-         <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
+     <style>
+         
+.book .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.book .row .image{
+  flex:1 1 40rem;
+}
+
+.book .row .image img{
+  width:70%;
+  padding-left: 3rem;
+}
+
+.book .row form{
+  flex:1 1 40rem;
+  padding:2rem;
+  margin-top:  3rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+}
+.book .row form h5 {
+                 color: #333;
+                 text-align: center;
+                 font-size: 1rem;
+                 margin-top: 1rem;
+             }
+            
+             .book .row form h6{
+                 color: #232b56;
+                 font-size: 1rem;
+                 font-weight: bold;
+             } 
+             .book .row form ul li{
+                text-decoration: none;
+                 font-size: 1rem;
+                 font-family:'Montserrat', sans-serif;
+                 color: #232b56;
+                 font-weight: 300;
+                 margin: 1rem 1rem 1rem 0;
+             }
+             .book .row form ul li a{
+                 color: #f0be38;
+                 font-weight: bold;
+                
+             }
+             .book .row form ul li a:hover{
+                 color: #232b56;
+
+             }
+              .book .row form i{
+                  color: #f0be38;
+                  font-size: 1rem;
+                  padding: 1rem 1rem 2rem 0;
+              }
+              
+ .down-btn{
+  width: 100%;
+  background-color: #232b56;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+}
+.down-btn:hover{
+    background-color: #f0be38;
+    color: #232b56;
+}
+
+     </style>
+     <section class="book" id="book">
+
+<div class="row">
+
+    <div class="image">
+        <img src="hero.png" alt="">
+    </div>
+
+    <form action="">
+        <p>The par value of one share is ETB 1,000 (One thousand Birr) and the total number of shares available shall be 5,000,000 (Five million). The minimum number of shares that can be bought shall be 10 shares worth Birr 10,000(Ten thousand birr) and maximum 100,000,000(Hundred million birr). You can either pay a full payment deposit or pay 50% of your pledged shares and pay the rest within six months of the bank's establishment.</p>
+        <h5>Steps to take</h5>
+    <ul>
+        <li>Fill the form after downloading</li>
+        <li>Pay Amount through <a href="index.html#payment">Any Bank</a></li>
+        <li>Attach necessary documents (Completed Form, Receipt, Identification)</li>
+    </ul>
+        <h5>Send Files through</h5>
+         
+             <i class="fa fa-envelope"><p>investor.relations@selambanket.com </p> </i>
+             <h6>Or Deliver in person at Selam Bank HQ</h6>
+             <a href="https://www.google.com/maps/place/Selam+Bank+SC/@9.0170322,38.7642523,17z/data=!3m1!4b1!4m5!3m4!1s0x164b8563d6ab5b9d:0x398be72d53970541!8m2!3d9.016934!4d38.7664205" target="_blank">   <i class="fa fa-map-marker"> <p> Addis Ababa ,Ethiopia ,Kazanchis, Tito st , In front of oilibya </br>
+                Genet W/yohnes 2nd floor, Office no. 201 </p></i> </a>
+         
+                <button class="down-btn" type="submit" onclick="window.open('Selam Bank Share Subscription Form_Amharic..pdf')">Download form</button>
+    </form>
+
+</div>
+
+</section>
+
+
+
+     <!--
+     <script>
+        function Validation() {
+        var fname = document.forms["myForm"]["fname"];
+        var lname = document.forms["myForm"]["lname"];
+        var city = document.forms["myForm"]["city"];
+        var subcity = document.forms["myForm"]["subcity"];
+        var wereda = document.forms["myForm"]["wereda"];
+        var email = document.forms["myForm"]["email"];
+        var phone = document.forms["myForm"]["phone"];
+        var shares = document.forms["myForm"]["shares"];
+        var birr = document.forms["myForm"]["birr"];
+        var banks = document.forms["myForm"]["banks"];
+        var bank = document.forms["myForm"]["bank"];
+        var aname = document.forms["myForm"]["aname"];
+        var aphone = document.forms["myForm"]["aphone"];
+       
+  
+        if (fname.value == "") {
+            window.alert("Please enter your name.");
+            fname.focus();
+            return false;
+        }
+        if (lname.value == "") {
+            window.alert("Please enter your last name.");
+            lname.focus();
+            return false;
+        }
+  
+        if (city.value == "") {
+            window.alert("Please enter City");
+            city.focus();
+            return false;
+        }
+        if (subcity.value == "") {
+            window.alert("Please enter subCity");
+            subcity.focus();
+            return false;
+        }
+        if (wereda.value == "") {
+            window.alert("Please enter Wereda");
+            wereda.focus();
+            return false;
+        }
+  
+        if (phone.value == "") {
+            window.alert(
+              "Please enter your phone number.");
+            phone.focus();
+            return false;
+        }
+  
+        if (email.value == "") {
+            window.alert("Please enter your Email Address");
+            email.focus();
+            return false;
+        }
+  
+        if (shares.value == "") {
+            window.alert("Please enter amount of shares");
+            shares.focus();
+            return false;
+        }
+        if (birr.value == "") {
+            window.alert("Please enter value of shares in birr");
+            birr.focus();
+            return false;
+        }
+        if (banks.value == "") {
+            window.alert("Please enter bank's name where payment is made");
+            banks.focus();
+            return false;
+        }
+        if (bank.value == "") {
+            window.alert("Please enter bank's Account Number where payment is made");
+            bank.focus();
+            return false;
+        }
+
+        return true;
+    }
+</script>
+     </script>
+      
 
          <div class="formContainer">
              <img src="SB Logo yellow .png" alt="" width="300">
                     <div class="formContent">
                         <h1>Share Subscription Form</h1>
                     </div>
-                    <form action="/">
+                    <form action="" name="myForm" method="post" onsubmit="return Validation()" autocomplete="on" >
                         <div class="row">
                             <div class="col-25">
-                        <label for="fname">First Name</label>
+                        <label for="fname">Full Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Your Name ...">
+                            <input type="text" id="fname" name="firstname" placeholder="Your Name ..." >
                          </div>
+                         <label for="phone">Phone Number</label>
+                         <input type="number" id="phone" name="phone">
+                         <label for="email"> Email</label>
+                         <input type="text" id="email" name="email" placeholder="example@gmail.com" >
                         </div>
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                     <h3> Address </h3>
                          <label for="city"> City </label>
-                         <input type="text" id="city" name="city">
+                         <input type="text" id="city" name="city" placeholder="eg: Addis Abeba...">
 
                          <label for="subcity"> sub-City </label>    
-                         <input type="text" id="subcity" name="subcity">
+                         <input type="text" id="subcity" name="subcity" placeholder="Arada">
 
                          <label for="wereda">Wereda|kebele</label>
 
-                         <input type="text" id="wereda" name="wereda">
+                         <input type="text" id="wereda" name="wereda" >
 
-                         <label for="phone">Phone Number</label>
-                         <input type="number" id="phone" name="phone" >
-                         <label for="email"> Email</label>
-                         <input type="text" id="email" name="email">
+                       
                             
                             <h3>Shares value</h3>
                          <label for="share"> Number of Shares</label>
@@ -134,9 +328,9 @@
 
                          <h3>Payment</h3>
                    <label for="bank">Bank Name</label>
-                         <input type="text" id="bank" name="bank" placeholder="Bank name where deposite was made Eg: CBE, Awash...">
+                         <input type="text" id="banks" name="banks" placeholder="Bank name where deposite was made Eg: CBE, Awash..." >
                          <label for="bank">Bank Account Number</label>
-                         <input type="number" id="bank" name="bank" placeholder="Account number of the bank where deposite was made">
+                         <input type="number" id="bank" name="bank" placeholder="Account number of the bank where deposite was made" >
                           <h3>Agent</h3>
                           <label for="aname">Agent Full Name</label>
                           <input type="text" id="aname" name="agentname">
@@ -158,8 +352,10 @@
                                 <input type="file" id="selectfile" multiple />
                             </div>
                         </div>
+                      
                      
-                        <input type="submit" value="Submit">
+                        
+                       <input type="submit" value="Submit">
                     </form>
          </div>
 
@@ -278,6 +474,7 @@ input[type=submit]:hover{
 }
     
 </style>
+-->
 
        <section class="contact" id="contact">
 

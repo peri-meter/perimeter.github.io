@@ -68,3 +68,4 @@ function ajax_file_upload(files_obj) {
       xhttp.send(form_data);
   }
 }
+
