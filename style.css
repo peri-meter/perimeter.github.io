@@ -719,7 +719,7 @@ nav .logo.space{
   .hexagon-gallery{
     align-items: center;
     grid-gap: 5px;
-    padding-left: 6rem;
+    padding-left: 3rem;
   }
   .hex{
     width: 180px;
