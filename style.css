@@ -725,15 +725,18 @@ nav .logo.space{
     width: 180px;
     height: 195px;
   }
+  .hex .names{
+    padding-top: 3rem;
+  }
   .hex .names .text h1{
     color: #232b56;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
     text-transform: none;
   }
   .hex .names .text p{
     color: #fff;
-    font-size: .7rem;
+    font-size: 1rem;
     text-align: center;
   }
 
