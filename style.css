@@ -960,12 +960,12 @@ footer .social a{
 
 @media(max-width:768px){
   html{
-      font-size: 90%;
+      font-size: 100%;
   }
 }
 @media(max-width:480px){
   html{
-      font-size: 70%;
+      font-size: 90%;
       
   }
 }
