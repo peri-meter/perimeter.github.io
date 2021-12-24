@@ -97,7 +97,7 @@
 
         <section class="share-form">
             <div class="head-form">
-                <img src="Selam.Logo.w.under.formation.png" alt="" width="230">
+                <img src="SB Logo_Housing.pattern.png" alt="" width="50">
                
                 <h1>  Share Subscription form 
                   </h1>
@@ -107,24 +107,47 @@
                       
                     <div class="left">
                         <form action="/" method="post" autocomplete="on">
-                            <div class="f_name">
+                            <div class="f_name" style="float: left;">
                                 <label for="fname">First Name</label>
                                 <input id="user_first_name" name="user[first_name]" size="30" type="text" required />
                               </div>
-                              
-                              <div class="l_name">
-                                <label for="l_name">City</label>
-                                <input id="last_name" name="user[l_name]" size="30" type="text" required />
+
+
+                              <div class="l_name" style="float: left;">
+                                <label for="lname">Last Name</label>
+                                <input id="user_last_name" name="user[last_name]" size="30" type="text" required />
                               </div>
-                              <div class="phone">
+                              <div class="city" style="float: left;">
+                                <label for="city_name">City</label>
+                                <input id="User_city" name="user[city]" size="30" type="text" required />
+                              </div>
+                              <div class="subcity" style="float: left;">
+                                <label for="sub-city">Sub City</label>
+                                <input id="user_sub_city" name="user[sebcity]" size="7" type="text" required />
+                              </div>
+                              <div class="kebele" style="float: left; padding-left: 10px; ">
+                                <label for="wereda">Wereda</label>
+                                <input id="user_wereda" name="user[wereda]" size="7" type="text" required />
+                              </div>
+
+                              <div class="phone" style="float: left;">
                                 <label for="phone">Phone Number</label>
                                 <input id="phone_num" name="user[phone_num]" size="30" type="tel" required />
                               </div>
-                              <div class="share-num">
-                                  <label for="share">Number of Shares</label>
-                                  <input id="share_num" name="share" size="30" type="number" required/>
+
+                              <div class="mail" style= "float: left; ">
+                                  <label for="email">Email</label>
+                                  <input id="user_email" name="user[email]" size="30" type="text" required/>
                               </div>
-                              <div class="Bank-name">
+                              <div class="share-num" style="float: left; clear : both; ">
+                                <label for="share">Number of Shares</label>
+                                <input id="share_num" name="share" type="number" required/>
+                            </div>
+                            <div class="share-value" style="float: left;">
+                                <label for="share-val">Purchased Share Value in Birr</label>
+                                <input id="share_value" name="value" size="30"  type="text" required/>
+                            </div>
+                            <div class="Bank-name" style="float: left; ">
                                 <label for="bank_name">Bank Name</label>
                                 <select name="banks" id="name-banks">
                                     <option value="abay">Abay Bank</option>
@@ -140,12 +163,29 @@
                                     <option value="zemen">Zemen Bank</option>
                                 </select>
                                  </div>
-                                 <div class="agent-name">
-                                    <label for="aname">Agent Full Name</label>
-                                    <input id="a_name" name="a-name" size="30" type="text" required/>
-                                </div>
-                        
+
+                            
+                              <div class="bank-number" style="float: left; padding-top: .5rem;">
+                                <label for="bank-num">Bank Account Number</label>
+                                <input id="bank_number" name="bank_num" size="30" type="number" required/>
+                            </div>
+                            <div class="agent-name" style="float: left; clear : both;">
+                                <label for="aname">Agent Full Name</label>
+                                <input id="a_name" name="a-name" size="30" type="text" required/>
+                            </div>
+                    
+                            <div class="aphone" style="float: left;">
+                                <label for="aphone">Agent's Phone Number</label>
+                                <input id="aphone_num" name="user[aphone_num]" size="30" type="tel" required />
+                              </div>
+                              
+                             
+                           
+                             
+                             
+                               
                     </div>
+                    <!--
                     <div class="right"><h1>
                         <div class="l_name">
                             <label for="lname">Last Name</label>
@@ -175,7 +215,7 @@
                             <label for="aphone">Agent's Phone Number</label>
                             <input id="aphone_num" name="user[aphone_num]" size="30" type="tel" required />
                           </div>
-                    </div>
+                    </div>-->
                 </div>
                 
                 <div class="upload">
@@ -200,7 +240,7 @@
 
     <style>
         .share-form{
-             padding: 5rem 7%;
+             padding: 6rem 7%;
         }
       
 .head-form{
@@ -208,13 +248,13 @@
     flex-wrap: wrap;
 }
 .head-form img{
-  height: 70px;
+  height: 55px;
 }
  .head-form h1{
     flex: 1;
     color: #232b56;
     display: flex;
-    padding: 20px 0 0 18px;
+    padding: 15px 0 0 18px;
     font-size: 2rem;
     }
     .head-form span{
@@ -232,13 +272,9 @@
             flex-wrap: wrap;
             flex-direction: row;
             background: red;
-            flex-grow: 5;
+           
         }
         .first-row .left{
-            background: #fff;
-            flex-wrap: wrap;
-        }
-        .first-row .right{
             background: #fff;
             flex-wrap: wrap;
         }
@@ -258,7 +294,7 @@
             font-size: 2vw;
           padding: 0em;
         color: white;
-        flex: 1 1 40px;
+        flex: 1;
         }
         label{
             color: #232b56;
@@ -266,10 +302,7 @@
             font-weight: bold;
         }
        
-        .right div{
-           
-            padding-left: 10px;
-        }
+     
         
 
 
@@ -286,7 +319,7 @@
 }
 input[type=number], select {
   width: 100%;
-  padding: 12px 35px;
+  padding: 12px 70px;
   margin: 1px 0;
   display: block;
   border: 1px solid #efefef;
@@ -297,13 +330,12 @@ input[type=number], select {
 input[type=tel], select {
   width: 100%;
   padding: 12px 35px;
-  margin: 8px 0;
+  margin: 1px 0;
   display: block;
   border: 1px solid #efefef;
   border-radius: 20px;
   box-sizing: border-box;
   background: #efefef;
-  resize: none;
 }
 
 input[type=submit] {
@@ -331,11 +363,17 @@ input[type=button]{
     cursor: pointer;
 } 
 
+input[type=button]:hover{
+      color: #f0be38;
+      background-color: #232b56;
+}
+
+
 #drop_file_zone {
     background-color: #efefef;
     border: #979797 5px dashed;
     width: 640px;
-    height: 430px;
+    height: 410px;
     padding: 8px;
     font-size: 18px;
     border-radius: 10px;
@@ -355,24 +393,18 @@ input[type=button]{
 #drag_upload_file #selectfile {
 display: none;
 }
-
+       .first-row .left{
+           padding-top: 2rem;
+       }
 
 
         footer{
         bottom: 0; left: 0; right: 0;
         position: relative;
     }
-    @media(max-width:480px){
-        .head-form h1{
-            font-size:x-large;
-            padding-top: 2rem;
-            padding-left: 4rem;
-            padding-bottom: 2rem;
-        }
-        .head-form img{
-            width: 0;
-            height: 0;
-        }
+    @media(max-width:600px){
+       
+       
         #drop_file_zone {
    
     width: 400px;
@@ -797,20 +829,20 @@ input[type=submit]:hover{
             </div>
             <div class="containers">
                 <div class="content-box">
-                    <img src="Selam.Phone.png" alt="" width="50">
+                    <img src="Selam.Phone.png" alt="" width="30">
                     <div class="para">
                         <p> +251966919695</p>
                     </div>
                 </div>
                 <div class="content-box">
                               
-                    <img src="Selam.email.png" alt="" width="50">
+                    <img src="Selam.email.png" alt="" width="30">
                     <div class="para">
                         <p> investor.relations@selambanket.com</p>
                     </div>
                 </div>
                 <div class="content-box">
-                    <img src="Selam.Location.png" alt="" width="50">
+                    <img src="Selam.Location.png" alt="" width="30">
                     <div>
                         <p>Addis Ababa ,Ethiopia ,Kazanchis, Tito st , In front of oilibya </br>
                             Genet W/yohnes 2nd floor, Office no. 201</p>

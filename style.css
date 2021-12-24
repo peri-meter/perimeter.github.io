@@ -105,6 +105,7 @@ nav .cancel-icon,
 nav .search-icon{
   display: none;
 }
+
 @media(max-width: 1245px) {
   nav{
     padding: 0 50px;
@@ -303,7 +304,7 @@ nav .logo.space{
 .card p{
     color: #979797;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 @media(max-width:768px){
@@ -338,6 +339,7 @@ nav .logo.space{
 }
 .head-share p{
   color: #979797;
+  font-size: 1rem;
 }
 .head-share h1 {
     padding-bottom: 1rem;
@@ -450,7 +452,7 @@ nav .logo.space{
 }
 
 .hexagon-gallery {
-    margin-left: -1rem;
+    margin-left: -7rem;
     margin-top: 30px;
     max-width: 1000px;
     display: grid;
@@ -561,7 +563,7 @@ nav .logo.space{
 @media(max-width:1024px){
   .hexagon-gallery{
     align-items: center;
-    padding-left: -20rem;
+    padding-left: -30rem;
   }
   .hex{
     width: 170px;
@@ -719,7 +721,7 @@ nav .logo.space{
   .hexagon-gallery{
     align-items: center;
     grid-gap: 5px;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
   }
   .hex{
     width: 180px;
@@ -730,13 +732,13 @@ nav .logo.space{
   }
   .hex .names .text h1{
     color: #232b56;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     text-transform: none;
   }
   .hex .names .text p{
     color: #fff;
-    font-size: 1rem;
+    font-size: .7rem;
     text-align: center;
   }
 
@@ -824,21 +826,22 @@ footer{
   
 }
 .content-box p{
-  font-size: 1.2rem;
+  font-size: 15px;
   color: #f6f6f4;
   font-weight: 100;
+  padding-top: .1rem;
 }
 .content-box img{
   font-size: 36px;
   margin-right: 20px;
   color: #f0be38;
-  height: 55px;
+  height: 30px;
 }
 .content-box .para p{
-  font-size: 1.2rem;
+  font-size: 15px;
   color: #f6f6f4;
   font-weight: 100;
-  padding-top: 1rem;
+  padding-top: .5rem;
 }
 
 footer .social a{
@@ -847,13 +850,13 @@ footer .social a{
   color: #f0be38;
 }
 .footer-bottom{
-  background: #cecec9;
+  background: rgb(10, 10, 97);
   width: 100%;
   padding: 20px 0;
   text-align: center;
 }
 .footer-bottom p{
-  color: #232b56;
+  color: #979797;
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
@@ -960,7 +963,7 @@ footer .social a{
 
 @media(max-width:768px){
   html{
-      font-size: 100%;
+      font-size: 90%;
   }
 }
 @media(max-width:480px){
