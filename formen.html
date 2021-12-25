@@ -94,7 +94,7 @@
         }
      </script>
 
-
+          <!--
         <section class="share-form">
             <div class="head-form">
                 <img src="SB Logo_Housing.pattern.png" alt="" width="50">
@@ -119,11 +119,11 @@
                               </div>
                               <div class="city" style="float: left;">
                                 <label for="city_name">City</label>
-                                <input id="User_city" name="user[city]" size="30" type="text" required />
+                                <input id="User_city" name="user[city]" size="30" type="text" placeholder="eg: Addis Abeba" required  />
                               </div>
                               <div class="subcity" style="float: left;">
                                 <label for="sub-city">Sub City</label>
-                                <input id="user_sub_city" name="user[sebcity]" size="7" type="text" required />
+                                <input id="user_sub_city" name="user[sebcity]" size="7" type="text" placeholder="eg: kirkos" required />
                               </div>
                               <div class="kebele" style="float: left; padding-left: 10px; ">
                                 <label for="wereda">Wereda</label>
@@ -132,21 +132,22 @@
 
                               <div class="phone" style="float: left;">
                                 <label for="phone">Phone Number</label>
-                                <input id="phone_num" name="user[phone_num]" size="30" type="tel" required />
+                                <input id="phone_num" name="user[phone_num]" size="30" type="tel" placeholder="+251..." required />
                               </div>
 
                               <div class="mail" style= "float: left; ">
                                   <label for="email">Email</label>
-                                  <input id="user_email" name="user[email]" size="30" type="text" required/>
+                                  <input id="user_email" name="user[email]" size="30" type="text" placeholder="example@gmail.com" required/>
                               </div>
                               <div class="share-num" style="float: left; clear : both; ">
                                 <label for="share">Number of Shares</label>
-                                <input id="share_num" name="share" type="number" required/>
+                                <input id="share_num" name="share" type="number" placeholder="min: 10 - max: 100,000" required/>
                             </div>
                             <div class="share-value" style="float: left;">
                                 <label for="share-val">Purchased Share Value in Birr</label>
-                                <input id="share_value" name="value" size="30"  type="text" required/>
+                                <input id="share_value" name="value" size="30"  type="text" placeholder="10,000 birr - 100,000,000 birr" required/>
                             </div>
+                          <div>  <p style="color: #f0be38; font-size: 1rem; float: left;"> *Add Info of the bank where you maid payment. </p></div>
                             <div class="Bank-name" style="float: left; ">
                                 <label for="bank_name">Bank Name</label>
                                 <select name="banks" id="name-banks">
@@ -163,12 +164,21 @@
                                     <option value="zemen">Zemen Bank</option>
                                 </select>
                                  </div>
-
+                                
+                              
                             
                               <div class="bank-number" style="float: left; padding-top: .5rem;">
                                 <label for="bank-num">Bank Account Number</label>
                                 <input id="bank_number" name="bank_num" size="30" type="number" required/>
                             </div>
+                          
+                            <div class="ser-char">  <p style="color: #f0be38; font-size: 1rem; float: left;"> *5% Service Charge should be paid. <a href="index.html#payment"> <strong style="color: #f0be38;  text-decoration: underline;">Check Bank's Info</strong> </a></p></div>
+                               
+                              <div style="float: left; width: 90%;">
+                                  <label for="service">Service Charge</label>
+                                  <input type="number" id="service_charge"  placeholder="Share Service Amount" required />
+                              </div>
+
                             <div class="agent-name" style="float: left; clear : both;">
                                 <label for="aname">Agent Full Name</label>
                                 <input id="a_name" name="a-name" size="30" type="text" required/>
@@ -185,7 +195,7 @@
                              
                                
                     </div>
-                    <!--
+                
                     <div class="right"><h1>
                         <div class="l_name">
                             <label for="lname">Last Name</label>
@@ -215,7 +225,7 @@
                             <label for="aphone">Agent's Phone Number</label>
                             <input id="aphone_num" name="user[aphone_num]" size="30" type="tel" required />
                           </div>
-                    </div>-->
+                    </div>
                 </div>
                 
                 <div class="upload">
@@ -236,207 +246,28 @@
                 </div>
             </form>
             </div>
+
+
         </section>
 
-    <style>
-        .share-form{
-             padding: 6rem 7%;
-        }
-      
-.head-form{
-    display: flex;
-    flex-wrap: wrap;
-}
-.head-form img{
-  height: 55px;
-}
- .head-form h1{
-    flex: 1;
-    color: #232b56;
-    display: flex;
-    padding: 15px 0 0 18px;
-    font-size: 2rem;
-    }
-    .head-form span{
-        height: 40px;
-        font-size: 3rem;
-        padding: 6px 0 0 15px;
-    }
-        .form-container{
-            display: flex;
-            overflow: hidden;
-            flex-wrap: wrap;
-        }
-        .first-row{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            background: red;
-           
-        }
-        .first-row .left{
-            background: #fff;
-            flex-wrap: wrap;
-        }
-        .upload{
-            background: #fff;
-            flex-wrap: wrap;
-            
-        }
-        
-        .upload h3{
-            color: #232b56;
-            font-size: 1.5rem;
-            text-transform: capitalize;
-
-        }
-        .form-container div{
-            font-size: 2vw;
-          padding: 0em;
-        color: white;
-        flex: 1;
-        }
-        label{
-            color: #232b56;
-            font-size: 1rem;
-            font-weight: bold;
-        }
+        <div style="padding: 1rem 7%; text-align: center; color: #232b56; font-weight: bold;">
+            <p>We provide gide for filling share application on Phone Number : +251 96 691 9695</p>
+        </div>
+    -->
        
+ 
+
+        
+
+
+
      
-        
-
-
-
-        input[type=text], select {
-  width: 100%;
-  padding: 12px 35px;
-  margin: 1px 0;
-  display: block;
-  border: 1px solid #efefef;
-  border-radius: 20px;
-  box-sizing: border-box;
-  background: #efefef;
-}
-input[type=number], select {
-  width: 100%;
-  padding: 12px 70px;
-  margin: 1px 0;
-  display: block;
-  border: 1px solid #efefef;
-  border-radius: 20px;
-  box-sizing: border-box;
-  background: #efefef;
-}
-input[type=tel], select {
-  width: 100%;
-  padding: 12px 35px;
-  margin: 1px 0;
-  display: block;
-  border: 1px solid #efefef;
-  border-radius: 20px;
-  box-sizing: border-box;
-  background: #efefef;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #f0be38;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: large;
-}
-input[type=submit]:hover{
-    background-color: #232b56;
-    color: #f0be38;
-}
-input[type=button]{
-    background-color: #f0be38;
-    color: #232b56;
-    font-weight: bold;
-    width: 250px;
-    padding: 5px 10px;
-    margin-left:190px ;
-    cursor: pointer;
-} 
-
-input[type=button]:hover{
-      color: #f0be38;
-      background-color: #232b56;
-}
-
-
-#drop_file_zone {
-    background-color: #efefef;
-    border: #979797 5px dashed;
-    width: 640px;
-    height: 410px;
-    padding: 8px;
-    font-size: 18px;
-    border-radius: 10px;
-}
-#drag_upload_file {
-  width:100%;
-  margin:0 auto;
-}
-.drag p {
-  text-align: center;
-  color: #232b56;
-  font-size: 1rem;
-  font-weight: bold;
-  padding-top: 10rem;
-}
-
-#drag_upload_file #selectfile {
-display: none;
-}
-       .first-row .left{
-           padding-top: 2rem;
-       }
-
-
-        footer{
-        bottom: 0; left: 0; right: 0;
-        position: relative;
-    }
-    @media(max-width:600px){
-       
-       
-        #drop_file_zone {
-   
-    width: 400px;
-    height: 230px;
-    padding: 8px;
-   
-}
-
-.drag p {
-  text-align: center;
-  color: #232b56;
-  font-size: 1rem;
-  font-weight: bold;
-  padding-top: 3rem;
-}
-input[type=button]{
-    background-color: #f0be38;
-    color: #232b56;
-    font-weight: bold;
-    width: 250px;
-    padding: 5px 10px;
-    margin-left:65px ;
-    cursor: pointer;
-} 
-    }
-
-    </style>
-
-
-
-     <!--
      <style>
+
+         .book {
+             padding: 4rem 7%;
+             padding-bottom: 1rem;
+         }
          
 .book .row{
   display: flex;
@@ -445,19 +276,12 @@ input[type=button]{
   align-items: center;
 }
 
-.book .row .image{
-  flex:1 1 40rem;
-}
 
-.book .row .image img{
-  width:70%;
-  padding-left: 3rem;
-}
 
 .book .row form{
   flex:1 1 40rem;
   padding:2rem;
-  margin-top:  3rem;
+  margin-top:  0rem;
   box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
   border-radius: .5rem;
 }
@@ -498,18 +322,18 @@ input[type=button]{
               
  .down-btn{
   width: 100%;
-  background-color: #232b56;
+  background-color: #f0be38;
   color: white;
-  padding: 14px 20px;
+  padding: 12px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px;
   cursor: pointer;
   font-size: large;
 }
 .down-btn:hover{
-    background-color: #f0be38;
-    color: #232b56;
+    background-color: #232b56;
+    color: #f0be38;
 }
 
      </style>
@@ -517,308 +341,34 @@ input[type=button]{
 
 <div class="row">
 
-    <div class="image">
-        <img src="hero.png" alt="">
-    </div>
 
     <form action="">
         <p>The par value of one share is ETB 1,000 (One thousand Birr) and the total number of shares available shall be 5,000,000 (Five million). The minimum number of shares that can be bought shall be 10 shares worth Birr 10,000(Ten thousand birr) and maximum 100,000,000(Hundred million birr). You can either pay a full payment deposit or pay 50% of your pledged shares and pay the rest within six months of the bank's establishment.</p>
         <h5>Steps to take</h5>
     <ul>
         <li>Fill the form after downloading</li>
-        <li>Pay Amount through <a href="index.html#payment">Any Bank</a></li>
+        <li>Pay Amount through <a href="index.html#payment">Listed Bank</a></li>
         <li>Attach necessary documents (Completed Form, Receipt, Identification)</li>
     </ul>
         <h5>Send Files through</h5>
          
-             <i class="fa fa-envelope"><p>investor.relations@selambanket.com </p> </i>
+             <i class="fas fa-envelope"><p>investor.relations@selambanket.com </p> </i>
              <h6>Or Deliver in person at Selam Bank HQ</h6>
              <a href="https://www.google.com/maps/place/Selam+Bank+SC/@9.0170322,38.7642523,17z/data=!3m1!4b1!4m5!3m4!1s0x164b8563d6ab5b9d:0x398be72d53970541!8m2!3d9.016934!4d38.7664205" target="_blank">   <i class="fa fa-map-marker"> <p> Addis Ababa ,Ethiopia ,Kazanchis, Tito st , In front of oilibya </br>
                 Genet W/yohnes 2nd floor, Office no. 201 </p></i> </a>
          
-                <button class="down-btn" type="submit" onclick="window.open('Selam Bank Share Subscription Form_Amharic..pdf')">Download form</button>
+                <button class="down-btn" type="submit" onclick="window.open('Selam Bank Share Subscription Form English..pdf')">Download form</button>
     </form>
 
 </div>
 
 </section>
 
--->
 
 
-    <!--
+
     
-     <script>
-        function Validation() {
-        var fname = document.forms["myForm"]["fname"];
-        var lname = document.forms["myForm"]["lname"];
-        var city = document.forms["myForm"]["city"];
-        var subcity = document.forms["myForm"]["subcity"];
-        var wereda = document.forms["myForm"]["wereda"];
-        var email = document.forms["myForm"]["email"];
-        var phone = document.forms["myForm"]["phone"];
-        var shares = document.forms["myForm"]["shares"];
-        var birr = document.forms["myForm"]["birr"];
-        var banks = document.forms["myForm"]["banks"];
-        var bank = document.forms["myForm"]["bank"];
-        var aname = document.forms["myForm"]["aname"];
-        var aphone = document.forms["myForm"]["aphone"];
-       
-  
-        if (fname.value == "") {
-            window.alert("Please enter your name.");
-            fname.focus();
-            return false;
-        }
-        if (lname.value == "") {
-            window.alert("Please enter your last name.");
-            lname.focus();
-            return false;
-        }
-  
-        if (city.value == "") {
-            window.alert("Please enter City");
-            city.focus();
-            return false;
-        }
-        if (subcity.value == "") {
-            window.alert("Please enter subCity");
-            subcity.focus();
-            return false;
-        }
-        if (wereda.value == "") {
-            window.alert("Please enter Wereda");
-            wereda.focus();
-            return false;
-        }
-  
-        if (phone.value == "") {
-            window.alert(
-              "Please enter your phone number.");
-            phone.focus();
-            return false;
-        }
-  
-        if (email.value == "") {
-            window.alert("Please enter your Email Address");
-            email.focus();
-            return false;
-        }
-  
-        if (shares.value == "") {
-            window.alert("Please enter amount of shares");
-            shares.focus();
-            return false;
-        }
-        if (birr.value == "") {
-            window.alert("Please enter value of shares in birr");
-            birr.focus();
-            return false;
-        }
-        if (banks.value == "") {
-            window.alert("Please enter bank's name where payment is made");
-            banks.focus();
-            return false;
-        }
-        if (bank.value == "") {
-            window.alert("Please enter bank's Account Number where payment is made");
-            bank.focus();
-            return false;
-        }
-
-        return true;
-    }
-</script>
-     </script>
-      
-
-         <div class="formContainer">
-             <img src="SB Logo yellow .png" alt="" width="300">
-                    <div class="formContent">
-                        <h1>Share Subscription Form</h1>
-                    </div>
-                    <form action="" name="myForm" method="post" onsubmit="return Validation()" autocomplete="on" >
-                        <div class="row">
-                            <div class="col-25">
-                        <label for="fname">Full Name</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Your Name ..." >
-                         </div>
-                         <label for="phone">Phone Number</label>
-                         <input type="number" id="phone" name="phone">
-                         <label for="email"> Email</label>
-                         <input type="text" id="email" name="email" placeholder="example@gmail.com" >
-                        </div>
-                    <h3> Address </h3>
-                         <label for="city"> City </label>
-                         <input type="text" id="city" name="city" placeholder="eg: Addis Abeba...">
-
-                         <label for="subcity"> sub-City </label>    
-                         <input type="text" id="subcity" name="subcity" placeholder="Arada">
-
-                         <label for="wereda">Wereda|kebele</label>
-
-                         <input type="text" id="wereda" name="wereda" >
-
-                       
-                            
-                            <h3>Shares value</h3>
-                         <label for="share"> Number of Shares</label>
-                         <input type="number" id="sharee" name="shares" placeholder="eg: 10">
-                         <label for="sharevalue">Shares value in Birr</label>
-                         <input type="number" name="birr" id="birr" placeholder="eg: 10,000 birr">
-
-                         <h3>Payment</h3>
-                   <label for="bank">Bank Name</label>
-                         <input type="text" id="banks" name="banks" placeholder="Bank name where deposite was made Eg: CBE, Awash..." >
-                         <label for="bank">Bank Account Number</label>
-                         <input type="number" id="bank" name="bank" placeholder="Account number of the bank where deposite was made" >
-                          <h3>Agent</h3>
-                          <label for="aname">Agent Full Name</label>
-                          <input type="text" id="aname" name="agentname">
-                          <label for="aphone">Agent's Phone Number</label>
-                          <input type="number" id="aphone" name="agentphone">
-                        
-                          <h3>
-                              Identification
-                          </h3>
-                          <label for="upload">Upload NECESSARY DOCUMENTS</label>
-                           
-                             <p>* Upload ID or Driving Licence and Payment Receipt</p>
-                        
-                          <div id="drop_file_zone" ondrop="upload_file(event)" ondragover="return false" onclick="file_explorer();">
-                            <div id="drag_upload_file">
-                                <p>Upload ID or Driving Licence and Payment Receipt</p>
-                                <p>or</p>
-                                <p><input type="button" value="Select File(s)" onclick="file_explorer();" /></p>
-                                <input type="file" id="selectfile" multiple />
-                            </div>
-                        </div>
-                      
-                     
-                        
-                       <input type="submit" value="Submit">
-                    </form>
-         </div>
-
-
-
-
-
-        <section class="appForm" id="form">
-     
-
-        </section>
-         
-<style>
-
-    footer{
-        bottom: 0; left: 0; right: 0;
-        position: relative;
-    }
-        .appForm{
-    padding-top: 7rem;
-    padding-bottom: 1rem;
-        }
-    .formContainer{
-        padding-top: 4rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        width: 100%;
-        height: auto;
-        color: #232b56;
-    }
-    .formContainer img{
-        align-items: center;
-        margin-left: 40%;
-    }
-    .formContainer p{
-        font-weight: bold;
-        color: #f0be38;
-    }
-   
-      .formContent{
-          color: #232b56;
-      }
-      input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 3px solid #f0be38;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=number], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 3px solid #f0be38;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-  font-size: 1.2rem;
-}
-#drop_file_zone {
-    background-color: #EEE;
-    border: #f0be38 5px dashed;
-    width: 590px;
-    height: 200px;
-    padding: 8px;
-    font-size: 18px;
-}
-#drag_upload_file {
-  width:100%;
-  margin:0 auto;
-}
-#drag_upload_file p {
-  text-align: center;
-  color: #232b56;
-}
-#drag_upload_file #selectfile {
-  display: none;
-}
-input[type=submit] {
-  width: 100%;
-  background-color: #232b56;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: large;
-}
-input[type=submit]:hover{
-    background-color: #f0be38;
-    color: #232b56;
-}
-.contact{
-    padding-top: 0rem ;
-}
-@media(max-width:500px){
-#drop_file_zone {
-    background-color: #EEE;
-    border: #999 5px dashed;
-    width: 365px;
-    height: 200px;
-    padding: 8px;
-    font-size: 18px;
-}
-.formContainer img{
-      padding-top: 1rem ;
-        margin-left: 4rem;
-    }
-}
     
-</style>-->
 
 
        <section class="foot">

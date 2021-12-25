@@ -91,194 +91,176 @@
           cancelBtn.classList.add("show");
         }
      </script>
-         <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
-
-         <div class="formContainer">
-             <img src="SB Logo yellow .png" alt="" width="300">
-                    <div class="formContent">
-                        <h1>Share Subscription Form</h1>
-                    </div>
-                    <form action="/">
-                        <div class="row">
-                            <div class="col-25">
-                        <label for="fname">First Name</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Your Name ...">
-                         </div>
-                        </div>
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <h3> Address </h3>
-                         <label for="city"> City </label>
-                         <input type="text" id="city" name="city">
-
-                         <label for="subcity"> sub-City </label>    
-                         <input type="text" id="subcity" name="subcity">
-
-                         <label for="wereda">Wereda|kebele</label>
-
-                         <input type="text" id="wereda" name="wereda">
-
-                         <label for="phone">Phone Number</label>
-                         <input type="number" id="phone" name="phone" >
-                         <label for="email"> Email</label>
-                         <input type="text" id="email" name="email">
-                            
-                            <h3>Shares value</h3>
-                         <label for="share"> Number of Shares</label>
-                         <input type="number" id="sharee" name="shares" placeholder="eg: 10">
-                         <label for="sharevalue">Shares value in Birr</label>
-                         <input type="number" name="birr" id="birr" placeholder="eg: 10,000 birr">
-
-                         <h3>Payment</h3>
-                   <label for="bank">Bank Name</label>
-                         <input type="text" id="bank" name="bank" placeholder="Bank name where deposite was made Eg: CBE, Awash...">
-                         <label for="bank">Bank Account Number</label>
-                         <input type="number" id="bank" name="bank" placeholder="Account number of the bank where deposite was made">
-                          <h3>Agent</h3>
-                          <label for="aname">Agent Full Name</label>
-                          <input type="text" id="aname" name="agentname">
-                          <label for="aphone">Agent's Phone Number</label>
-                          <input type="number" id="aphone" name="agentphone">
-                        
-                          <h3>
-                              Identification
-                          </h3>
-                          <label for="upload">Upload NECESSARY DOCUMENTS</label>
-                           
-                             <p>* Upload Passport and Yellow Card</p>
-                        
-                          <div id="drop_file_zone" ondrop="upload_file(event)" ondragover="return false" onclick="file_explorer();">
-                            <div id="drag_upload_file">
-                                <p>Upload Passport and Yellow Card</p>
-                                <p>or</p>
-                                <p><input type="button" value="Select File(s)" onclick="file_explorer();" /></p>
-                                <input type="file" id="selectfile" multiple />
-                            </div>
-                        </div>
-                     
-                        <input type="submit" value="Submit">
-                    </form>
-         </div>
-
-
-
-
-
-        <section class="appForm" id="form">
-     
-
+         <style>
+ 
+            #slider {
+                padding-top: 2rem;
+                overflow: hidden;
+            }
+            #slider figure {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                animation: 20s slider infinite;
+            }
+            #slider figure img {
+                width: 20%;
+                float: left;
+            }
+            
+            @keyframes slider {
+                0% {
+                    left: 0;
+                }
+                20% {
+                    left: 0;
+                }
+                25% {
+                    left: -100%;
+                }
+                45% {
+                    left: -100%;
+                }
+                50% {
+                    left: -200%;
+                }
+                70% {
+                    left: -200%;
+                }
+                75% {
+                    left: -300%;
+                }
+                95% {
+                    left: -300%;
+                }
+                100% {
+                    left: -400%;
+                }
+            }
+            
+            </style>
+            <section class="home">
+             <div id="slider">
+                    <figure>
+                        <img src="d1.jpg">
+                        <img src="d2.jpg">
+                        <img src="d1.jpg">
+                        <img src="d3.jpg">
+                        <img src="d1.jpg">
+                    </figure>
+                </div>
         </section>
-         
-<style>
 
-    footer{
-        bottom: 0; left: 0; right: 0;
-        position: relative;
-    }
-        .appForm{
-    padding-top: 7rem;
-    padding-bottom: 1rem;
-        }
-    .formContainer{
-        padding-top: 4rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        width: 100%;
-        height: auto;
-        color: #232b56;
-    }
-    .formContainer img{
-        align-items: center;
-        margin-left: 40%;
-    }
-    .formContainer p{
-        font-weight: bold;
-        color: #f0be38;
-    }
+        
+        <style>
+
+            .book {
+                padding: 0rem 7%;
+                padding-bottom: 1rem;
+            }
+            
+   .book .row{
+     display: flex;
+     flex-wrap: wrap;
+     gap:1.5rem;
+     align-items: center;
+   }
    
-      .formContent{
-          color: #232b56;
-      }
-      input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 3px solid #f0be38;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=number], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 3px solid #f0be38;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-  font-size: 1.2rem;
-}
-#drop_file_zone {
-    background-color: #EEE;
-    border: #f0be38 5px dashed;
-    width: 590px;
-    height: 200px;
-    padding: 8px;
-    font-size: 18px;
-}
-#drag_upload_file {
-  width:100%;
-  margin:0 auto;
-}
-#drag_upload_file p {
-  text-align: center;
-  color: #232b56;
-}
-#drag_upload_file #selectfile {
-  display: none;
-}
-input[type=submit] {
-  width: 100%;
-  background-color: #232b56;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: large;
-}
-input[type=submit]:hover{
-    background-color: #f0be38;
-    color: #232b56;
-}
-.contact{
-    padding-top: 0rem ;
-}
-@media(max-width:500px){
-#drop_file_zone {
-    background-color: #EEE;
-    border: #999 5px dashed;
-    width: 365px;
-    height: 200px;
-    padding: 8px;
-    font-size: 18px;
-}
-.formContainer img{
-      padding-top: 1rem ;
-        margin-left: 4rem;
-    }
-}
-    
-</style>
+   
+   
+   .book .row form{
+     flex:1 1 40rem;
+     padding:2rem;
+     margin-top:  0rem;
+     box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+     border-radius: .5rem;
+   }
+   .book .row form h5 {
+                    color: #333;
+                    text-align: center;
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                }
+               
+                .book .row form h6{
+                    color: #232b56;
+                    font-size: 1rem;
+                    font-weight: bold;
+                } 
+                .book .row form ul li{
+                   text-decoration: none;
+                    font-size: 1rem;
+                    font-family:'Montserrat', sans-serif;
+                    color: #232b56;
+                    font-weight: 300;
+                    margin: 1rem 1rem 1rem 0;
+                }
+                .book .row form ul li a{
+                    color: #f0be38;
+                    font-weight: bold;
+                   
+                }
+                .book .row form ul li a:hover{
+                    color: #232b56;
+   
+                }
+                 .book .row form i{
+                     color: #f0be38;
+                     font-size: 1rem;
+                     padding: 1rem 1rem 2rem 0;
+                 }
+                 
+    .down-btn{
+     width: 100%;
+     background-color: #f0be38;
+     color: white;
+     padding: 12px 20px;
+     margin: 8px 0;
+     border: none;
+     border-radius: 0px;
+     cursor: pointer;
+     font-size: large;
+   }
+   .down-btn:hover{
+       background-color: #232b56;
+       color: #f0be38;
+   }
+   
+        </style>
+        <section class="book" id="book">
+   
+   <div class="row">
+   
+      
+   
+       <form action="">
+           <p>The par value of one share is ETB 1,000 (One thousand Birr) and the total number of shares available shall be 5,000,000 (Five million).
+            The minimum number of shares that can be bought shall be 10 shares worth Birr 10,000(Ten thousand birr) and maximum 100,000,000(Hundred million birr).
+             You can either pay a full payment deposit or pay 50% of your pledged shares and pay the rest within six months of the bank's establishment.
+             You must pay in only 3 forign currency UDS , POUND or EURO.</p>
+           <h5>Steps to take</h5>
+       <ul>
+           <li>Fill the form after downloading</li>
+           <li>Pay Amount through <a href="index.html#payment">Listed Bank</a></li>
+           <li>Attach necessary documents (Completed Form, Receipt, Identification)</li>
+       </ul>
+           <h5>Send Files through</h5>
+            
+                <i class="fas fa-envelope"><p>investor.relations@selambanket.com </p> </i>
+                <h6>Or Deliver in person at Selam Bank HQ</h6>
+                <a href="https://www.google.com/maps/place/Selam+Bank+SC/@9.0170322,38.7642523,17z/data=!3m1!4b1!4m5!3m4!1s0x164b8563d6ab5b9d:0x398be72d53970541!8m2!3d9.016934!4d38.7664205" target="_blank">   <i class="fa fa-map-marker"> <p> Addis Ababa ,Ethiopia ,Kazanchis, Tito st , In front of oilibya </br>
+                   Genet W/yohnes 2nd floor, Office no. 201 </p></i> </a>
+            
+                   <button class="down-btn" type="submit" onclick="window.open('SHARE SUBSCRIPTION FORM_DIASPORA_INDIVIDUAL.pdf')">Download form</button>
+       </form>
+   
+   </div>
+   
+   </section>
+
+
+
 
        <section class="foot">
 
@@ -288,20 +270,20 @@ input[type=submit]:hover{
             </div>
             <div class="containers">
                 <div class="content-box">
-                    <img src="Selam.Phone.png" alt="" width="50">
+                    <img src="Selam.Phone.png" alt="" width="30">
                     <div class="para">
                         <p> +251966919695</p>
                     </div>
                 </div>
                 <div class="content-box">
                               
-                    <img src="Selam.email.png" alt="" width="50">
+                    <img src="Selam.email.png" alt="" width="30">
                     <div class="para">
                         <p> investor.relations@selambanket.com</p>
                     </div>
                 </div>
                 <div class="content-box">
-                    <img src="Selam.Location.png" alt="" width="50">
+                    <img src="Selam.Location.png" alt="" width="30">
                     <div>
                         <p>Addis Ababa ,Ethiopia ,Kazanchis, Tito st , In front of oilibya </br>
                             Genet W/yohnes 2nd floor, Office no. 201</p>
