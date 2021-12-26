@@ -1,4 +1,4 @@
-<?php include 'form.php';?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -687,7 +687,7 @@ input[type=tel], select {
                 </div>
               <div class="formm">
                   <h2>How can we help?</h2>
-                  <form action=https://formsubmit.co/hiruyfasil22@gmail.com method="post" autocomplete="on"><div style="margin:0;padding:0">
+                  <form action= "send_mail.php" method="post" autocomplete="on"><div style="margin:0;padding:0">
 
 
                      <div class="fname" style="float:left;">
@@ -697,24 +697,21 @@ input[type=tel], select {
                       
                       <div class="lname" style="float:left; ">
                         <label for="lname">Last Name</label>
-                        <input id="user_last_name" name="user[last_name" size="25" type="text" required />
+                        <input id="user_last_name" name="user[last_name]" size="25" type="text" required />
                       </div>
                       <div class="phone" style="float:left;">
                         <label for="phone">Phone Number</label>
-                        <input id="user_phone" name="user[phone]" size="25" type="tel" required />
+                        <input id="user_phone" name="user_phone_number" size="25" type="tel" required />
                       </div>
                       
                       <div class="mail" style="float: left;">
                         <label for="email">Email</label>
-                        <input id="user_email" name="user[email]" size="25" type="text" required />
+                        <input id="user_email" name="email_address" size="25" type="text" required />
                       </div>
-                      <div class="sub" style="float: left;">
-                        <label for="sunject">Subject</label>
-                        <input id="Subject" name="user[subject]" size="64" type="text" required />
-                      </div>
+                   
                       <div class="mess" style="float: left;" >
                         <label for="message">Message</label>
-                       <textarea name="message" id="message" cols="70" rows="10" required> </textarea>
+                       <textarea name="comments" id="message" cols="70" rows="10" required> </textarea>
                       </div>
                       
                          <input type="submit" value="Submit">
