@@ -830,15 +830,15 @@ footer .social a:hover{
 
 .login-form-container form{
   margin:2rem;
-  padding:1.5rem 2rem;
+  padding:1rem 2rem;
   border-radius: .5rem;
   background:#fff;
   width:40rem;
 }
 
 .login-form-container form h3{
-  font-size: 1.5rem;
-  color:#444;
+  font-size: 1.4rem;
+  color:#232b56;
   text-transform: uppercase;
   text-align: center;
   padding:1rem 0;
@@ -856,12 +856,12 @@ footer .social a:hover{
   display: block;
   width: 100%;
   padding: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   color: #232b56;
   background-color: #f0be38;
   border: none;
-  border-radius: 0.4rem;
+  border-radius: 0px;
   transition: 0.2s;
   cursor: pointer;
   letter-spacing: 0.1rem;
