@@ -426,17 +426,7 @@ nav .logo.space{
   padding: 0rem 0;
 }
 
-/*
-.investor .head-about{
-  display: flex;
-}
-.investor .head-about h1{
-  color: #232b56;
-  display: flex;
-  flex: 1;
-  padding: 0px 0 0 20px;
-}
-*/
+
 .head-org p{
   color: #979797;
   padding-top: 2rem;
@@ -1101,8 +1091,12 @@ position: relative;
       
   }
   .shares .head-about h1{
-    font-size: .5rem;
+    font-size: 1.3rem;
   }
+  .container .content h1{
+    font-size: 1.3rem;
+  }
+
 }
 
 
