@@ -1097,9 +1097,13 @@ position: relative;
 }
 @media(max-width:480px){
   html{
-      font-size: 80%;
+      font-size: 100%;
       
   }
+  .container .content h1{
+    color: #232b56;
+    font-size: 1rem;
+}
 }
 
 
