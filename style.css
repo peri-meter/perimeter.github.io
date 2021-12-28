@@ -720,10 +720,10 @@ nav .logo.space{
  }
 footer{
   min-height: 250px;
-  background: #232b56;
+  background: #222959;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -733,6 +733,7 @@ footer{
 }
 .content-box{
   display: flex;
+  flex-direction: column;
   margin: 15px;
   color: #f6f6f4;
   
@@ -742,18 +743,21 @@ footer{
   color: #f6f6f4;
   font-weight: 100;
   padding-top: .1rem;
+  padding-left: 4rem;
 }
 .content-box img{
   font-size: 36px;
   margin-right: 20px;
   color: #f0be38;
   height: 30px;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 .content-box .para p{
   font-size: 15px;
-  color: #f6f6f4;
+  color: #fff;
   font-weight: 100;
-  padding-top: .5rem;
+  padding-top: .1rem;
 }
 
 footer .social a{
@@ -765,23 +769,17 @@ footer .social a:hover{
   color: #979797;
 }
 .footer-bottom{
-  background: rgb(10, 10, 97);
+  background: #12183d;
   width: 100%;
   padding: 20px 0;
   text-align: center;
 }
 .footer-bottom p{
-  color: #979797;
+  color: #f0be38;
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
 }
-.footer-bottom span{
-  text-transform: uppercase;
-  opacity: .4;
-  font-weight: 200;
-}
-
 @media(max-width:768px){
    .containers{
      flex-direction: column;
@@ -790,13 +788,17 @@ footer .social a:hover{
      margin: 10px;
      }
      .content-box p{
-       align-items: baseline;
+      text-align: center;
+      padding-left: 0rem;
      }
      .content-box img{
        height: fit-content;
+       margin-left: 46%;
+       margin-right: 54%;
      }
      .content-box .para p{
-      align-items: baseline;
+      text-align: center;
+      padding-left: 0rem;
     }
 
 }
@@ -1095,6 +1097,10 @@ position: relative;
   }
   .container .content h1{
     font-size: 1.5rem;
+  }
+  .container .content .card-btn{
+    padding: .5rem .6rem;
+    font-size: .8rem;
   }
 
 }
