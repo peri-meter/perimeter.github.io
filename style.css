@@ -342,6 +342,7 @@ nav .logo.space{
   color: #979797;
   font-size: 1rem;
   text-transform: none;
+  text-justify: inter-word;
 }
 .head-share h1 {
     padding-bottom: 1rem;
@@ -474,7 +475,7 @@ nav .logo.space{
     text-align: center;
   }
   .hex .names .text p{
-    color: #232b56;
+    color: #fff;
     font-size: .8rem;
     text-align: center;
   }
@@ -570,7 +571,6 @@ nav .logo.space{
     text-transform: none;
   }
   .hex .names .text p{
-    color: #fff;
     font-size: 1rem;
     text-align: center;
   }
