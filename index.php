@@ -670,8 +670,7 @@ input[type=tel], select {
                     <h1>Contact </h1>
                 <div class="info">
                        <h2>Visit us</h2>
-                       <p>Addis Ababa,Ethiopia, Kazanchis, Tito st, In front</br> of oilibya
-                        Genet W/yohnes 2nd floor, Office no. 201</p>
+                       <p>Kazanchis, Next to oilibya, Genet Bldg, 2nd Floor,<br> Office No. 201, Addis Ababa, Ethiopia</p>
                         <h2>Call us</h2>
                         <p>+251 96 691 9695</p>
                         <h2>Get in touch</h2>
