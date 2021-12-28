@@ -790,6 +790,7 @@ footer .social a:hover{
      .content-box p{
       text-align: center;
       padding-left: 0rem;
+      font-size: .8rem;
      }
      .content-box img{
        height: fit-content;
@@ -799,6 +800,7 @@ footer .social a:hover{
      .content-box .para p{
       text-align: center;
       padding-left: 0rem;
+      font-size: .8rem;
     }
 
 }
@@ -1099,6 +1101,10 @@ position: relative;
     font-size: 1.5rem;
   }
   .container .content .card-btn{
+    padding: .5rem .6rem;
+    font-size: .8rem;
+  }
+  .share-btn{
     padding: .5rem .6rem;
     font-size: .8rem;
   }
