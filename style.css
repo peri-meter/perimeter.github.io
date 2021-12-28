@@ -250,6 +250,7 @@ nav .logo.space{
     padding: .5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
+    font-weight: 500;
 }
 .container .content .card-btn:hover{
     background: #232b56;
@@ -356,6 +357,7 @@ nav .logo.space{
     padding: .5rem 1rem ;
     font-size: 1rem;
     cursor: pointer;
+    font-weight: 500;
 }
 .share-btn:hover{
     background: #232b56;
