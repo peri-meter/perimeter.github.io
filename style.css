@@ -881,7 +881,7 @@ footer{
 }
 
 
-/*
+
 .share-form{
   padding: 6rem 7%;
   padding-bottom: 1rem;
@@ -946,8 +946,9 @@ label{
  font-weight: bold;
 }
 
-
-
+.kebele  input[type=number], select {
+  padding: 12px 20px;
+}
 
 
 
@@ -963,7 +964,7 @@ background: #efefef;
 }
 input[type=number], select {
 width: 100%;
-padding: 12px 70px;
+padding: 12px 35px;
 margin: 1px 0;
 display: block;
 border: 1px solid #efefef;
@@ -1047,9 +1048,23 @@ padding-top: 2rem;
 .ser-char a:hover{
   color: #232b56;
 }
-@media(max-width:480px){
+@media(max-width:600px){
 
 
+  .kebele  input[type=number], select {
+    width: 11rem;
+    padding: 12px 30px;
+  }
+  input[type=number], select {
+    width: 100%;
+    padding: 12px 70px;
+    margin: 1px 0;
+    display: block;
+    border: 1px solid #efefef;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: #efefef;
+    }
 .head-form h1{
 padding-top: 0rem;
 }
@@ -1079,7 +1094,6 @@ margin-left:65px ;
 cursor: pointer;
 } 
 }
-*/
 
 footer{
 bottom: 0; left: 0; right: 0;
