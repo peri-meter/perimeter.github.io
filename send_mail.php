@@ -5,6 +5,7 @@ You will need to change this value to a valid email address that you can access.
 */
 $webmaster_email = "hiruyfasil22@gmail.com";
 
+
 /*
 This bit sets the URLs of the supporting pages.
 If you change the names of any of the pages, you will need to change the values here.
@@ -63,14 +64,14 @@ header( "Location: $feedback_page" );
 If email injection is detected, redirect to the error page.
 If you add a form field, you should add it here.
 */
-elseif ( isInjected($email_address) || isInjected($first_name)  || isInjected($comments) ) {
+elseif ( isInjected($email_address) || isInjected($first_name) ||isInjected($last_name) || isInjected($phone) || isInjected($comments) ) {
 header( "Location: $error_page" );
 }
 
 // If we passed all previous tests, send the email then redirect to the thank you page.
 else {
 
-	mail( "$webmaster_email", "Feedback Form Results", $msg );
+	mail( "$webmaster_email", "Contact Form Results", $msg );
 
 	header( "Location: $thankyou_page" );
 }
