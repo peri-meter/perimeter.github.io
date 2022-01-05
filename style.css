@@ -1130,7 +1130,7 @@ position: relative;
   }
 
 }
-@media(max-width:350px){
+@media(max-width:450px){
   html{
     font-size: 60%;
   }
