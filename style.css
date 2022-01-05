@@ -232,7 +232,7 @@ nav .logo.space{
 .container{
     width: 100%;
     height: auto;
-    background-color: #f6f6f4;
+    background-color: #efefef;
     
 }
 .container .content{
@@ -288,14 +288,14 @@ nav .logo.space{
     backface-visibility: hidden;
 }
 .card-1{
-    background-image: url('g1.jpg');
+    background-image: url('SelamBank.about.us.jpg');
 }
 .card-2{
-    background-image: url('g3.jpg');
+    background-image: url('SelamBank.vision.jpg');
 }
 
 .card-3{
-    background-image: url('g2.jpg');
+    background-image: url('SelamBank.Objective.jpg');
 }
 .card img{
     display: block;
@@ -642,8 +642,8 @@ nav .logo.space{
     padding-left: 6.5rem;
   }
   .hex{
-    width: 180px;
-    height: 195px;
+    width: 175px;
+    height: 190px;
   }
   .hex .names{
     padding-top: 3rem;
@@ -788,7 +788,7 @@ footer{
      }
      .content-box p{
       text-align: center;
-      padding-left: 0rem;
+      padding-left: 0;
       font-size: 1rem;
       padding-top: .3rem;
       padding-bottom: 1rem;
@@ -802,6 +802,7 @@ footer{
       text-align: center;
       font-size: 1rem;
       padding-top: .3rem;
+      margin-left: -2.3rem;
     }
     .footer-img{
       padding-top: 1rem;
