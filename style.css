@@ -285,16 +285,17 @@ nav .logo.space{
     height: 250px;
     margin-bottom: 15px;
     background-size: cover;
+    backface-visibility: hidden;
 }
 .card-1{
     background-image: url('g1.jpg');
 }
 .card-2{
-    background-image: url('g2.jpg');
+    background-image: url('g3.jpg');
 }
 
 .card-3{
-    background-image: url('g3.jpg');
+    background-image: url('g2.jpg');
 }
 .card img{
     display: block;
@@ -1127,6 +1128,11 @@ position: relative;
     font-size: .8rem;
   }
 
+}
+@media(max-width:350px){
+  html{
+    font-size: 60%;
+  }
 }
 
 
