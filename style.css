@@ -382,10 +382,10 @@ nav .logo.space{
   }
   
   .review .box img{
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 1rem;
+    height: 5rem;
+  width: 10;
+  object-fit: cover;
+  margin-bottom: 1rem;
   }
 
 .brand-container{
