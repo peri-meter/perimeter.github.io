@@ -272,6 +272,7 @@ nav .logo.space{
 }
 .holder{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .card{
@@ -310,24 +311,30 @@ nav .logo.space{
     font-size: 1rem;
     text-transform: none;
 }
-/*
+
 @media(max-width:768px){
     .holder{
      display: flex;
      flex-wrap: wrap;
     }
     .card-image {
-      height: 320px;
+      height: 300px;
+    }
+    .card{
+      width: 500px;
     }
   
 
 }
-@media(max-width:480px){
+@media(max-width:500px){
   .card-image {
-    height: 250px;
+   height: 250px;
+  }
+  .card{
+    width: 500px;
   }
 
-}*/
+}
 .shares .head-about{
     display: flex;
 }
