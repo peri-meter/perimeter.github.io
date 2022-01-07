@@ -325,7 +325,6 @@ nav .logo.space{
 @media(max-width:480px){
   .card-image {
     height: 250px;
-    width: 350px;
   }
 
 }
