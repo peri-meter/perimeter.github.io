@@ -638,7 +638,7 @@ nav .logo.space{
 @media(max-width:480px){
   .hexagon-gallery{
     align-items: center;
-    grid-gap: 0px;
+    grid-gap: 5px;
     padding-left: 7.3rem;
   }
   .hex{
