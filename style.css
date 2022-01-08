@@ -325,7 +325,7 @@ nav .logo.space{
   
 
 }
-@media(max-width:500px){
+@media(max-width:480px){
   .holder{
     display: flex;
     flex-wrap: wrap;
