@@ -273,7 +273,6 @@ nav .logo.space{
 .holder{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .card{
     background-color: #fff;
@@ -327,8 +326,12 @@ nav .logo.space{
 
 }
 @media(max-width:500px){
+  .holder{
+    display: flex;
+    flex-wrap: wrap;
+   }
   .card-image {
-   height: 250px;
+   height: 220px;
   }
   .card{
     width: 500px;
