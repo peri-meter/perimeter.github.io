@@ -3,7 +3,9 @@ let formBtn = document.querySelector('#login-btn');
 let loginForm = document.querySelector('.login-form-container');
 let formClose = document.querySelector('#form-close');
 
-
+window.onscroll = () =>{
+  loginForm.classList.remove('active');
+}
 
 formBtn.addEventListener('click', () =>{
   loginForm.classList.add('active');
@@ -19,7 +21,7 @@ var swiper = new Swiper(".review-slider", {
   spaceBetween: 20,
   loop:true,
   autoplay: {
-      delay: 5000,
+      delay: 4000,
       disableOnInteraction: false,
   },
   breakpoints: {
@@ -34,7 +36,38 @@ var swiper = new Swiper(".review-slider", {
       },
   },
 });
-
+var swiper = new Swiper(".brand-slider", {
+  spaceBetween: 10,
+  loop:true,
+  autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+  },
+});
+/*
+var swiper = new Swiper(".brand-slider", {
+  spaceBetween: 20,
+  loop:true,
+  autoplay: {
+      delay: 2500000,
+      disableOnInteraction: false,
+  },
+  breakpoints: {
+      450: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      991: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 5,
+      },
+    },
+});
+*/
 
 function upload_file(e) {
   e.preventDefault();
