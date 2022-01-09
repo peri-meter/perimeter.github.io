@@ -317,7 +317,7 @@ nav .logo.space{
      flex-wrap: wrap;
     }
     .card-image {
-      height: 300px;
+      height: 320px;
     }
     .card{
       width: 500px;
@@ -574,11 +574,11 @@ nav .logo.space{
 @media(max-width:768px){
   .hexagon-gallery{
     align-items: center;
-    padding-left: 4rem;
+    padding-left: 8rem;
   }
   .hex{
-    width: 200px;
-    height: 215px;
+    width: 190px;
+    height: 205px;
   }
   .hex .names .text h1{
     color: #232b56;
