@@ -278,6 +278,7 @@ nav .logo.space{
     background-color: #fff;
     width: 400px;
     margin: 15px;
+    margin-top: .3rem;
     
 }
 .card-image{
@@ -310,6 +311,9 @@ nav .logo.space{
     font-size: 1rem;
     text-transform: none;
 }
+.shares .card{
+  margin-bottom: -1rem;
+}
 
 @media(max-width:768px){
     .holder{
@@ -340,7 +344,7 @@ nav .logo.space{
       background-color: #fff;
       width: 400px;
       margin: 0px;
-      
+      margin-bottom: -1rem;
 
   }
 }
