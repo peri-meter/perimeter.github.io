@@ -416,7 +416,7 @@ nav .logo.space{
 .brand-container{
     overflow-x: hidden;
     text-align: center;
-    margin-top: 1.4rem;
+    margin-top: 1rem;
 }
 
 .brand-container h5{
@@ -427,7 +427,7 @@ nav .logo.space{
   text-transform: capitalize;
 }
 .brand-container .brand-slider{
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
 }
 
 .brand-container.box{
