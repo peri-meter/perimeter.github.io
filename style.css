@@ -350,13 +350,15 @@ nav .logo.space{
       margin-bottom: 1rem;
 
   }
+  .share-logo img{
+    margin-bottom: 25px;
+  }
 }
   .share-logo img{
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-
 .head-share{
     color: #232b56;
     
