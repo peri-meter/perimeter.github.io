@@ -350,6 +350,9 @@ nav .logo.space{
       margin-bottom: 1rem;
 
   }
+  .share-logo img{
+    margin-bottom: 15px;
+  }
 }
   .share-logo img{
     display: block;
@@ -358,7 +361,7 @@ nav .logo.space{
   }
 
   .shares{
-    padding: 0rem 7%;
+    padding: 1.5rem 7%;
   }
 .head-share{
     color: #232b56;
@@ -386,7 +389,7 @@ nav .logo.space{
 }
 .share-btn:hover{
     background: #232b56;
-    color: #f0be38
+    color: #f0be38;
 }
 
 .review{
@@ -413,6 +416,7 @@ nav .logo.space{
 .brand-container{
     overflow-x: hidden;
     text-align: center;
+    margin-top: 1.4rem;
 }
 
 .brand-container h5{
@@ -437,7 +441,6 @@ nav .logo.space{
   height: 5rem;
   width: 10;
   object-fit: cover;
-  margin-bottom: 1rem;
 }
 .brand-container .box h2{
   color: #232b56;
@@ -740,7 +743,7 @@ nav .logo.space{
 
 
 .contact{
-  padding: 0rem 7%;
+  padding: 2rem 7%;
   padding-bottom: 0px;
 }
  .foot{
