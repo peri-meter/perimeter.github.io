@@ -350,9 +350,6 @@ nav .logo.space{
       margin-bottom: 1rem;
 
   }
-  .share-logo img{
-    margin-bottom: 35px;
-  }
 }
   .share-logo img{
     display: block;
@@ -360,9 +357,6 @@ nav .logo.space{
     margin-right: auto;
   }
 
-  .shares{
-    padding: 1.5rem 7%;
-  }
 .head-share{
     color: #232b56;
     
@@ -397,7 +391,7 @@ nav .logo.space{
   } 
 
  .review .review-slider{
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
   }
   
   .review .box{
