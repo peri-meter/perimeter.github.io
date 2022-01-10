@@ -251,7 +251,7 @@ nav .logo.space{
     font-size: 1rem;
     cursor: pointer;
     font-weight: 500;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 .container .content .card-btn:hover{
     background: #232b56;
@@ -327,7 +327,9 @@ nav .logo.space{
     .card{
       width: 500px;
     }
-  
+    .container .content .card-btn{
+      margin-top: 1rem;
+    }
 
 }
 @media(max-width:480px){
