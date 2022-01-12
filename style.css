@@ -510,7 +510,6 @@ nav .logo.space{
 .hex {
   cursor: pointer;
   display: flex;
-  flex-wrap: wrap;
   position: relative;
   width: 185px;
   height: 200px;
@@ -1154,11 +1153,11 @@ position: relative;
     font-size: .8rem;
   }
 }
+
 @media (-webkit-device-pixel-ratio: 1.5) {
-  * {
-    zoom: 0.98;
-  }
-}
+  :root {
+  zoom: 0.85;
+  }}
 
 
 
