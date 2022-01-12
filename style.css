@@ -472,14 +472,14 @@ nav .logo.space{
 }
 
 .hexagon-gallery {
-    margin-left: -7rem;
+  margin-left: -2rem;
     margin-top: 30px;
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(0, 1fr);
     grid-auto-rows: 150px;
     grid-gap: 14px;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
   }
   .hex  .names{
     
@@ -510,6 +510,7 @@ nav .logo.space{
 .hex {
   cursor: pointer;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   width: 185px;
   height: 200px;
@@ -586,6 +587,7 @@ nav .logo.space{
   .hexagon-gallery{
     align-items: center;
     padding-left: 8rem;
+    padding-bottom: 50px;
   }
   .hex{
     width: 190px;
@@ -834,7 +836,7 @@ footer{
 
 .login-form-container{
   position: fixed;
-  top:-130%; left: 0;
+  top:-150%; left: 0;
   z-index: 10000;
   min-height: 100vh;
   width:100%;
@@ -1150,6 +1152,11 @@ position: relative;
   .share-btn{
     padding: .5rem .6rem;
     font-size: .8rem;
+  }
+}
+@media (-webkit-device-pixel-ratio: 1.5) {
+  * {
+    zoom: 0.98;
   }
 }
 
