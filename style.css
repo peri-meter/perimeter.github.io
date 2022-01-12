@@ -585,7 +585,7 @@ nav .logo.space{
 @media(max-width:768px){
   .hexagon-gallery{
     align-items: center;
-    padding-left: 8rem;
+    padding-left: -6rem;
     padding-bottom: 50px;
   }
   .hex{
@@ -657,11 +657,11 @@ nav .logo.space{
     grid-column: 3 / span 2;
   }
 }
-@media(max-width:480px){
+@media(max-width:500px){
   .hexagon-gallery{
     align-items: center;
     grid-gap: 5px;
-    padding-left: 7.3rem;
+    padding-left: 2.5rem;
     grid-auto-rows: 140px;
   }
   .hex{
