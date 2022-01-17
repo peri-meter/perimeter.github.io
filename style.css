@@ -341,6 +341,37 @@ nav .logo.space{
   .card{
     width: 500px;
   }
+  .containers{
+    flex-wrap: wrap;
+  }
+  .content-box{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    color: #f6f6f4;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .content-box p{
+    font-size: medium;
+    color: #fff;
+    font-weight: 500;
+    flex: 1;
+    display: flex;
+    padding: 4px 10px 0 12px;
+  }
+  .content-box img{
+    font-size: 36px;
+    color: #f0be38;
+    height: 30px;
+  }
+  .content-box .para p{
+    font-size: medium;
+    color: #fff;
+    padding: 4px 12px 0 12px;
+    font-weight: 500;
+    
+  }
 }
 
 @media(max-width:768px){
@@ -615,7 +646,7 @@ nav .logo.space{
 @media(max-width:768px){
   .hexagon-gallery{
     align-items: center;
-    padding-left: -6rem;
+    padding-left: 6.6rem;
     padding-bottom: 50px;
   }
   .hex{
@@ -691,7 +722,7 @@ nav .logo.space{
   .hexagon-gallery{
     align-items: center;
     grid-gap: 5px;
-    padding-left: 2.5rem;
+    padding-left: 6.6rem;
     grid-auto-rows: 140px;
   }
   .hex{
@@ -793,38 +824,11 @@ footer{
 }
 .containers{
   display: flex;
-  
+  flex-wrap: wrap;
 }
-.content-box{
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-  color: #f6f6f4;
-  font-family: 'Montserrat', sans-serif;
-  
-}
-.content-box p{
-  font-size: medium;
-  color: #fff;
-  font-weight: 500;
-  padding-top: 0rem;
-  padding-left: 4rem;
-}
-.content-box img{
-  font-size: 36px;
-  color: #f0be38;
-  height: 30px;
-  margin-left: 50%;
-  margin-right: 50%;
-}
-.content-box .para p{
-  font-size: medium;
-  color: #fff;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  font-weight: 500;
-  padding-left: 2rem;
-}
+
+
+
 .footer-bottom{
   background: #12183d;
   width: 100%;
@@ -837,10 +841,42 @@ footer{
   word-spacing: 2px;
   text-transform: capitalize;
 }
-@media(max-width:768px){
+
+@media(max-width:991px){
    .containers{
      flex-direction: column;
    }
+   .content-box{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    color: #f6f6f4;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+   .content-box p{
+    font-size: medium;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 0rem;
+    padding-left: 4rem;
+  }
+  .content-box img{
+    font-size: 36px;
+    color: #f0be38;
+    height: 30px;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  .content-box .para p{
+    font-size: medium;
+    color: #fff;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    font-weight: 500;
+    padding-left: 2rem;
+  }
+  
    .content-box{
      margin: 10px;
     
