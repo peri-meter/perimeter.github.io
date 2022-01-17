@@ -290,10 +290,10 @@ nav .logo.space{
     backface-visibility:hidden;
 }
 .card-1{
-    background-image: url('SelamBank about us.jpg');
+    background-image: url('SelamBank about us.jpg'); 
 }
 .card-2{
-    background-image: url('SelamBank.vision.jpg');
+    background-image: url('SelamBank.vision.jpg'); 
 }
 
 .card-3{
@@ -322,11 +322,12 @@ nav .logo.space{
     display: flex;
     justify-content: center;
     margin-left: -.9rem;
+    margin-right: -.9rem;
 }
   .shares .holder{
     display: flex;
     justify-content: center;
-    margin-left: -.1rem;
+    margin-left: -.9rem;
   }
   .shares .card img{
     width: 400px;
@@ -572,8 +573,8 @@ nav .logo.space{
   cursor: pointer;
   display: flex;
   position: relative;
-  width: 195px; 
-  height: 210px;
+  width: 205px; 
+  height: 220px;
   background-color: #f0be38;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
