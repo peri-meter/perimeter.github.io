@@ -311,7 +311,7 @@ nav .logo.space{
     text-align: center;
     font-size: 1rem;
     text-transform: none;
-    text-justify:newspaper;
+    text-align: center;
 }
 .shares .card{
   margin-bottom: 0rem;
@@ -430,9 +430,9 @@ nav .logo.space{
   font-weight: 500;
   font-size: 1rem;
   text-transform: none;
-  text-justify:newspaper;
   padding-top: 1.4rem;
   padding-left: .1rem;
+  text-align: justify;
 }
 .share-btn{
     background-color: #f0be38;
@@ -521,7 +521,7 @@ nav .logo.space{
   font-weight: 500;
   padding-top: 30px;
   text-transform: none;
-
+  text-align: justify;
 }
 .hex img {
   opacity: 1;
