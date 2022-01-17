@@ -430,7 +430,7 @@ nav .logo.space{
   font-weight: 500;
   font-size: 1rem;
   text-transform: none;
-  text-justify: inter-word;
+  text-justify:newspaper;
   padding-top: 1.4rem;
   padding-left: .1rem;
 }
