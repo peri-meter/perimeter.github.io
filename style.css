@@ -316,8 +316,32 @@ nav .logo.space{
 .shares .card{
   margin-bottom: 0rem;
 }
-
-@media(min-width:770px){
+.holder{
+  display: flex;
+  justify-content: center;
+  margin-left: -.9rem;
+  margin-right: -.9rem;
+}
+.shares .holder{
+  display: flex;
+  justify-content: center;
+  margin-left: -.9rem;
+}
+.shares .card img{
+  width: 400px;
+  margin: 26px;
+}
+.share-logo img{
+  width: 390px;
+}
+.share .holder .card{
+  width: 500px;
+ }
+.card{
+  width: 500px;
+}
+@media(min-width:1000px){
+  /*
   .holder{
     display: flex;
     justify-content: center;
@@ -342,6 +366,7 @@ nav .logo.space{
   .card{
     width: 500px;
   }
+  */
   .containers{
     flex-wrap: wrap;
   }
@@ -389,10 +414,19 @@ nav .logo.space{
     .container .content .card-btn{
       margin-top: 1rem;
     }
+    .shares .card img{
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .share-logo img{
+      margin-bottom: 25px;
+      width: 390px;
+    }
   
 
 }
-@media(max-width:480px){
+@media(max-width:500px){
   .holder{
     display: flex;
     flex-wrap: wrap;
@@ -411,9 +445,12 @@ nav .logo.space{
   }
   .shares .card img{
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .share-logo img{
     margin-bottom: 25px;
+    width: 290px;
   }
 }
   .share-logo img{
@@ -651,8 +688,8 @@ nav .logo.space{
     padding-bottom: 50px;
   }
   .hex{
-    width: 190px;
-    height: 205px;
+    width: 200px;
+    height: 215px;
   }
   .hex .names .text h1{
     color: #232b56;
