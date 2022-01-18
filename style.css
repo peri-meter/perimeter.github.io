@@ -290,7 +290,7 @@ nav .logo.space{
     backface-visibility:hidden;
 }
 .card-1{
-    background-image: url('SelamBank about us.jpg'); 
+    background-image: url('SelamBank about us.jpg');
 }
 .card-2{
     background-image: url('SelamBank.vision.jpg'); 
@@ -317,7 +317,7 @@ nav .logo.space{
   margin-bottom: 0rem;
 }
 
-@media(min-width:1000px){
+@media(min-width:1023px){
   .holder{
     display: flex;
     justify-content: center;
