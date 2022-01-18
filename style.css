@@ -404,6 +404,7 @@ nav .logo.space{
     .holder{
      display: flex;
      flex-wrap: wrap;
+   
     }
     .card-image {
       height: 320px;
@@ -430,9 +431,11 @@ nav .logo.space{
   .holder{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0rem;
+    margin-right: 0rem;
    }
   .card-image {
-   height: 220px;
+   height: 250px;
   }
   .card{
     width: 500px;
@@ -445,12 +448,13 @@ nav .logo.space{
   }
   .shares .card img{
     width: 300px;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
   }
   .share-logo img{
-    margin-bottom: 25px;
-    width: 290px;
+    margin-bottom: 5px;
+    width: 300px;
   }
 }
   .share-logo img{
