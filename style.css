@@ -418,8 +418,6 @@ nav .logo.space{
   .holder{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0rem;
-    margin-right: 0rem;
    }
   .card-image {
    height: 250px;
