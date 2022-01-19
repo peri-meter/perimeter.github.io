@@ -30,7 +30,7 @@ nav{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 80px;
   padding: 0 100px;
 }
 nav .logo{
@@ -65,6 +65,7 @@ nav form{
   min-width: 18%!important;
   border-radius: 2px;
   border: 1px solid rgba(155,155,155,0.2);
+  margin-right: .6rem;
 }
 nav form .search-data{
   width: 100%;
@@ -78,7 +79,7 @@ nav form .search-data{
 }
 nav form button{
   padding: 0 15px;
-  color: #232b56;
+  color: #f0be38;
   font-size: 17px;
   background: #979797;
   border: none;
@@ -274,6 +275,8 @@ nav .logo.space{
 .holder{
   display: flex;
   justify-content: center;
+  margin-left: -.9rem;
+  margin-right: -.9rem;
 }
 .card{
     background-color: #fff;
@@ -314,7 +317,7 @@ nav .logo.space{
     text-align: center;
 }
 .shares .card{
-  margin-bottom: 0rem;
+  margin-bottom: -1.5rem;
 }
 .holder{
   display: flex;
@@ -333,6 +336,7 @@ nav .logo.space{
 }
 .share-logo img{
   width: 390px;
+  margin-bottom: -1.5rem;
 }
 .share .holder .card{
   width: 500px;
@@ -341,34 +345,12 @@ nav .logo.space{
   width: 500px;
 }
 @media(min-width:1000px){
-  /*
-  .holder{
-    display: flex;
-    justify-content: center;
-    margin-left: -.9rem;
-    margin-right: -.9rem;
-}
-  .shares .holder{
-    display: flex;
-    justify-content: center;
-    margin-left: -.9rem;
-  }
-  .shares .card img{
-    width: 400px;
-    margin: 26px;
-  }
-  .share-logo img{
-    width: 390px;
-  }
-  .share .holder .card{
-    width: 500px;
-   }
-  .card{
-    width: 500px;
-  }
-  */
+  
   .containers{
     flex-wrap: wrap;
+  }
+  .footer-img{
+    margin-bottom: 1rem;
   }
   .content-box{
     display: flex;
@@ -398,6 +380,12 @@ nav .logo.space{
     font-weight: 500;
     
   }
+  .footer-bottom{
+    margin-top: 2rem;
+  
+  }
+ 
+  
 }
 
 @media(max-width:768px){
@@ -1241,6 +1229,8 @@ footer{
 bottom: 0; left: 0; right: 0;
 position: relative;
 }
+
+
 
 
 @media(max-width:768px){
