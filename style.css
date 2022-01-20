@@ -401,6 +401,12 @@ nav .search-icon{
     .container .content .card-btn{
       margin-top: 1rem;
     }
+    .shares .holder{
+      display: flex;
+      justify-content: center;
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
     .shares .card img{
       width: 400px;
       margin-left: auto;
