@@ -317,7 +317,7 @@ nav .logo.space{
     text-align: center;
 }
 .shares .card{
-  margin-bottom: -1.5rem;
+  margin-bottom: 0rem;
 }
 .shares .holder{
   display: flex;
@@ -331,7 +331,7 @@ nav .logo.space{
 }
 .share-logo img{
   width: 390px;
-  margin-bottom: -1.5rem;
+  margin-bottom: 0rem;
 }
 .share .holder .card{
   width: 500px;
