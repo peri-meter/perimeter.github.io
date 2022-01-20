@@ -37,6 +37,7 @@ nav .logo{
   color: #fff;
   font-size: 30px;
   font-weight: 600;
+  letter-spacing: -1px;
   padding-left: .5rem;
 }
 nav .nav-items{
@@ -433,7 +434,6 @@ nav .logo.space{
     width: 300px;
     margin: 0;
     margin-left: 1.4rem;
-    margin-right: auto;
   }
   .share-logo img{
     margin-bottom: 5px;
