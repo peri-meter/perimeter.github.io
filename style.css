@@ -554,9 +554,6 @@ nav .search-icon{
   transition: .5s ease;
   backface-visibility: hidden;
 }
-.hexagon-gallery{
-  padding: 2rem 7%;
-}
 .hexagon-gallery {
   margin-left: -6.5rem;
     margin-top: 30px;
