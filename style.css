@@ -866,11 +866,11 @@ opacity: 1;
     grid-column: 3 / span 2;
   }
 }
-@media(max-width:480px){
+@media(max-width:500px){
   .hexagon-gallery{
     align-items: center;
     grid-gap: 4px;
-    padding-left: 6.5rem;
+    padding-left: 7.2rem;
     grid-auto-rows: 140px;
   }
   .hex{
