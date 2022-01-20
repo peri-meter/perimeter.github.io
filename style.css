@@ -323,8 +323,9 @@ nav .search-icon{
 .shares .holder{
   display: flex;
   justify-content: center;
+  /*
   margin-left: -3rem;
-  margin-right: -6.5rem;
+  margin-right: -6.5rem;*/
 }
 .shares .card img{
   width: 400px;
@@ -436,11 +437,6 @@ nav .search-icon{
     margin-bottom: 25px;
   }
 }
-  .share-logo img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .share-logo img{
     display: block;
     margin-left: auto;
