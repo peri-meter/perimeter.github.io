@@ -288,7 +288,7 @@ nav .logo.space{
     background-color: #f0be38;
     height: 270px;
     margin-bottom: 15px;
-    background-size: cover;
+    background-size:cover;
     backface-visibility:hidden;
 }
 .card-1{
@@ -418,11 +418,9 @@ nav .logo.space{
   .holder{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0rem;
-    margin-right: 0rem;
    }
   .card-image {
-   height: 250px;
+   height: 270px;
   }
   .card{
     width: 500px;
