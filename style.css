@@ -37,7 +37,7 @@ nav .logo{
   color: #fff;
   font-size: 30px;
   font-weight: 600;
-  letter-spacing: -1px;
+  padding-left: .5rem;
 }
 nav .nav-items{
   display: flex;
@@ -79,16 +79,16 @@ nav form .search-data{
 }
 nav form button{
   padding: 0 15px;
-  color: #f0be38;
+  color: #232b56;
   font-size: 17px;
-  background: #979797;
+  background: #f0be38;
   border: none;
   border-radius: 2px;
   cursor: pointer;
 }
 nav form button:hover{
-  background: #f0be38;
-  color: #232b56;
+  background: #232b56;
+  color: #f0be38;
 }
 nav .menu-icon,
 nav .cancel-icon,
@@ -253,6 +253,7 @@ nav .logo.space{
     cursor: pointer;
     font-weight: 500;
     margin-top: .5rem;
+    margin-bottom: .4rem;
 }
 .container .content .card-btn:hover{
     background: #232b56;
@@ -323,7 +324,7 @@ nav .logo.space{
   display: flex;
   justify-content: center;
   margin-left: -3rem;
-  margin-right: -6.5rem;
+  margin-right: -5rem;
 }
 .shares .card img{
   width: 400px;
@@ -555,11 +556,12 @@ nav .logo.space{
   transition: .5s ease;
   backface-visibility: hidden;
 }
-
+.hexagon-gallery{
+  padding: 2rem 7%;
+}
 .hexagon-gallery {
-  margin-left: -6.4rem;
+  margin-left: -6.5rem;
     margin-top: 30px;
-    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(0, 1fr);
     grid-auto-rows: 160px;
@@ -590,6 +592,8 @@ nav .logo.space{
     color: #fff;   
     font-size: .8rem;
     text-align: center;
+    text-transform: none;
+    font-weight: 500;
   }
 
 .hex {
@@ -745,9 +749,9 @@ nav .logo.space{
 @media(max-width:500px){
   .hexagon-gallery{
     align-items: center;
-    grid-gap: 5px;
-    padding-left: 6.6rem;
-    grid-auto-rows: 140px;
+    grid-gap: 4px;
+    margin-left: -5rem;
+    grid-auto-rows: 150px;
   }
   .hex{
     width: 170px;
