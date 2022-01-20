@@ -419,8 +419,6 @@ nav .logo.space{
   .holder{
     display: flex;
     flex-wrap: wrap;
-    margin-right: 0rem;
-    margin-left: 0rem;
    }
   .card-image {
    height: 230px;
@@ -511,7 +509,7 @@ nav .logo.space{
   text-align: center;
   padding: auto;
   padding-bottom: 2rem;
-  text-transform: capitalize;
+  text-transform: none;
 }
 .brand-container .brand-slider{
   padding-bottom: 0rem;
