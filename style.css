@@ -677,9 +677,11 @@ nav .search-icon{
 }
 
 */
-.hexagon-gallery {
+.hex-holder{
   margin-left: -7rem;
-  margin-right: auto;
+}
+
+.hexagon-gallery {
   margin-top: 30px;
   max-width: 100%;
   display: grid;

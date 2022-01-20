@@ -367,7 +367,7 @@
             <h1> Organizing Members
               </h1>
          </div>
-        
+        <div class="hex-holder">
          <section class="hexagon-gallery">
             <div class="hex"><img src="f1.jpg" alt="" class="founder-image">
                 <div class="names">
@@ -461,6 +461,7 @@
             </div>
              
          </section>
+        </div>
        
           <div class="head-org">
             <p>The Organizing Members of the bank are qualified, kowledgeable, and possess the necessary qualities to successfully establish the bank, including raising the initial capital.</p>
@@ -519,7 +520,7 @@
             }
             .formm {
                 background: #fff;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
             }
             .formm h2{
                 color: #232b56;
@@ -612,6 +613,16 @@ input[type=submit]:hover{
             }
 
 @media(max-width:768px){
+    .lname{
+        float: left;
+    }
+    .subject{
+            float: left;
+        }
+     .preference{
+         float: left;
+         width: 21rem;
+     }   
     input[type=text], select {
   width: 100%;
   padding: 12px 35px;
