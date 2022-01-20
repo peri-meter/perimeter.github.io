@@ -417,14 +417,19 @@ nav .search-icon{
   .holder{
     display: flex;
     flex-wrap: wrap;
-    margin-right: 0rem;
-    margin-left: 0rem;
+    
    }
   .card-image {
    height: 230px;
   }
   .card{
     width: 500px;
+  }
+  .shares .holder{
+    display: flex;
+    justify-content: center;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
   .shares .card{
       background-color: #fff;
