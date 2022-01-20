@@ -322,15 +322,15 @@ nav .logo.space{
 .shares .holder{
   display: flex;
   justify-content: center;
-  margin-left: -.9rem;
-  margin-right: -.9rem;
+  margin-left: -3rem;
+  margin-right: -6.5rem;
 }
 .shares .card img{
-  width: 438px;
+  width: 400px;
   margin: 0px;
 }
 .share-logo img{
-  width: 390px;
+  width: 385px;
   margin-bottom: 0rem;
 }
 .share .holder .card{
