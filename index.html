@@ -530,6 +530,17 @@
                 color: #232b56;
                 font-weight: 600;
             }
+
+        .lname{
+            float: right;
+        }
+        .subject{
+            float: right;
+        }
+        .preference{
+            float: right;
+            width: 19rem;
+        }    
             input[type=text], select {
   width: 100%;
   padding: 12px 35px;
@@ -619,6 +630,17 @@ input[type=tel], select {
 
 
   @media(max-width:500px){
+
+    .lname{
+        float: left;
+    }
+    .subject{
+            float: left;
+        }
+     .preference{
+         float: left;
+         width: 21rem;
+     }   
     input[type=text], select {
         width: 95%;
   padding: 12px 35px;
@@ -696,18 +718,18 @@ padding: .5rem .6rem;
                         <input id="user_first_name" name="user[first_name]" size="30" type="text" required />
                       </div>
                       
-                      <div class="lname" style="float: left; ">
+                      <div class="lname">
                         <label for="lname">Last Name</label>
                         <input id="user_last_name" name="user[last_name]" size="30" type="text" required />
                       </div>
                       
-                  <!-- <div class="preference" style="float: left;">
+                   <div class="preference" >
                         <label for="pref">Contact preference</label>
-                        <select name="cont_pref" id="pref_cont" style="width: 19rem;">
+                        <select name="cont_pref" id="pref_cont" >
                             <option value="phone_pref">Phone</option>
-                            <option value="email_pref">Email</option>
+                            <option value="email_pref ">Email</option>
                         </select>
-                   </div>-->
+                   </div>
                 
                       <div class="mail" style="float: left;">
                         <label for="email">Email</label>
@@ -719,9 +741,9 @@ padding: .5rem .6rem;
                         <input id="user_phone" name="user_phone_number" size="30" type="tel" required />
                       </div>
 
-                      <div class="subject" style="float: left;">
-                        <label for="email">Subject</label>
-                        <input id="user_subject" name="subject" size="73" type="text" required />
+                      <div class="subject">
+                        <label for="email">Topic | Subject </label>
+                        <input id="user_subject" name="subject" size="30" type="text" required />
                       </div>
                     
                       <div class="mess" style="float: left;" >
