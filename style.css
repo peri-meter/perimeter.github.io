@@ -413,7 +413,7 @@ nav .search-icon{
   
 
 }
-@media(max-width:500px){
+@media(max-width:480px){
   .holder{
     display: flex;
     flex-wrap: wrap;
@@ -740,7 +740,7 @@ nav .search-icon{
     grid-column: 3 / span 2;
   }
 }
-@media(max-width:500px){
+@media(max-width:480px){
   .hexagon-gallery{
     align-items: center;
     grid-gap: 4px;
