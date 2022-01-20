@@ -417,6 +417,8 @@ nav .search-icon{
   .holder{
     display: flex;
     flex-wrap: wrap;
+    margin-right: 0rem;
+    margin-left: 0rem;
    }
   .card-image {
    height: 230px;
