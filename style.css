@@ -557,6 +557,7 @@ nav .search-icon{
 .hexagon-gallery {
   margin-left: -6.5rem;
     margin-top: 30px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(0, 1fr);
     grid-auto-rows: 160px;
