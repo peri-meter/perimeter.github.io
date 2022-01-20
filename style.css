@@ -566,6 +566,7 @@ nav .search-icon{
   transition: .5s ease;
   backface-visibility: hidden;
 }
+/*
 .hexagon-gallery {
   margin-left: -6.4rem;
     margin-top: 30px;
@@ -674,6 +675,115 @@ nav .search-icon{
 .hex:hover .names{
   opacity: 1;
 }
+
+*/
+.hexagon-gallery {
+  margin-left: -7rem;
+  margin-right: auto;
+  margin-top: 30px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(0, 1fr);
+  grid-auto-rows: 160px;
+  grid-gap: 14px;
+  padding-bottom: 50px;
+}
+.hex  .names{
+  
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding-top: 4rem;
+
+}
+.hex .names .text h1{
+  white-space: nowrap;
+  overflow: hidden;
+  color: #232b56;
+  font-size: 1rem;
+  text-transform: none;
+  text-align: center;
+}
+.hex .names .text p{
+  color: #232b56;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.hex {
+display: flex;
+position: relative;
+width: 205px;
+height: 220px;
+background-color: #f0be38;
+-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hex:first-child {
+grid-row-start: 1;
+grid-column: 2 / span 2;
+}
+
+.hex:nth-child(2) {
+grid-row-start: 1;
+grid-column: 4 / span 2;
+}
+
+.hex:nth-child(3) {
+grid-row-start: 1;
+grid-column: 6 / span 2;
+}
+
+.hex:nth-child(4) {
+grid-row-start: 1;
+grid-column: 8 / span 2;
+}
+
+.hex:nth-child(5) {
+grid-row-start: 1;
+grid-column: 10 / span 2;
+}
+
+.hex:nth-child(6) {
+grid-row-start: 1;
+grid-column: 12 / span 2;
+}
+
+.hex:nth-child(7) {
+grid-row-start: 2;
+grid-column: 3 / span 2;
+}
+
+.hex:nth-child(8) {
+grid-row-start: 2;
+grid-column: 5 / span 2;
+}
+
+.hex:nth-child(9) {
+grid-row-start: 2;
+grid-column: 7 / span 2;
+}
+
+.hex:nth-child(10) {
+grid-row-start: 2;
+grid-column: 9 / span 2;
+}
+.hex:nth-child(11) {
+grid-row-start: 2;
+grid-column: 11 / span 2;
+}
+.hex:hover .founder-image{
+opacity: 0.3;
+}
+.hex:hover .names{
+opacity: 1;
+}
+
 
 
 
