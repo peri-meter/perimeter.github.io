@@ -65,7 +65,7 @@ nav form{
   min-width: 18%!important;
   border-radius: 2px;
   border: 1px solid rgba(155,155,155,0.2);
-  margin-right: .3rem;
+  margin-right: .9rem;
 }
 nav form .search-data{
   width: 100%;
@@ -324,7 +324,7 @@ nav .logo.space{
   display: flex;
   justify-content: center;
   margin-left: -3rem;
-  margin-right: -5rem;
+  margin-right: -6.5rem;
 }
 .shares .card img{
   width: 400px;
@@ -432,7 +432,7 @@ nav .logo.space{
   .shares .card img{
     width: 300px;
     margin: 0;
-    margin-left: auto;
+    margin-left: 1.4rem;
     margin-right: auto;
   }
   .share-logo img{
@@ -464,7 +464,7 @@ nav .logo.space{
     border: 0px;
     display: inline-block;
     margin-top: 1.7rem;
-    padding: .5rem 1rem ;
+    padding: .5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
     font-weight: 500;
@@ -545,7 +545,6 @@ nav .logo.space{
   font-weight: 500;
   padding-top: 30px;
   text-transform: none;
-  text-align: justify;
 }
 .hex img {
   opacity: 1;
