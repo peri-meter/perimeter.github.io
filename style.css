@@ -721,7 +721,7 @@ opacity: 0.3;
 opacity: 1;
 }
 
-@media(max-width: 990px){
+@media(max-width: 1140px){
   .hexagon-gallery{
     align-items: center;
     padding-left: 6.6rem;
@@ -1256,7 +1256,7 @@ position: relative;
     }
     .hexagon-gallery{
       align-items: center;
-      padding-left: 6.6rem;
+      padding-left: 7.2rem;
       padding-bottom: 50px;
     }
     .hex{
