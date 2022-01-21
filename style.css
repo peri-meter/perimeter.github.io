@@ -289,14 +289,14 @@
         background-size: cover;
     }
     .card-1{
-        background-image: url('g1.jpg');
+        background-image: url('SelamBank about us.jpg');
     }
     .card-2{
-        background-image: url('g2.jpg');
+        background-image: url('SelamBank.vision.jpg');
     }
     
     .card-3{
-        background-image: url('g3.jpg');
+        background-image: url('SelamBank.Objective.jpg');
     }
     .card img{
         display: block;
@@ -1153,6 +1153,7 @@
       :root {
       zoom: 0.84;
       }}
+      /*
       @media (-webkit-device-pixel-ratio: 1) {
         :root {
         zoom: 1.24;
@@ -1162,6 +1163,7 @@
           zoom: 0.76;
           }
         }
+        */
     
     
     
