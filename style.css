@@ -1,7 +1,9 @@
 
       
     @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
-    
+    :root{
+      --container-width:1200px;
+    }
     *{
       margin: 0;
       padding: 0;
@@ -20,21 +22,29 @@
         scroll-padding-top: 6rem;
         scroll-behavior: smooth;
     }
+    body,html{
+      margin:0;
+      width: 100%;
+
+    }
     section{
-        padding: 2rem 7%;
+     
     }
     
     nav{
-      position: fixed;
+      position: sticky;
       top: 0; left: 0 ;right: 0; 
       z-index: 1000;
     background: #f6f6f4;
+    height: 70px;
+  }
+  nav .nav-container{
+    width:var(--container-width);
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
-    padding: 0 100px;
   }
   nav .logo{
     color: #fff;
@@ -239,7 +249,8 @@
         
     }
     .container .content{
-        padding: 1rem 7%;
+      max-width: var(--container-width);
+      margin: auto;
     }
     .container .content h1{
          color: #232b56;
@@ -256,7 +267,7 @@
     }
     .container .content .card-btn:hover{
         background: #232b56;
-        color: #f0be38
+        color: #f0be38;
     }
     
 
@@ -275,19 +286,21 @@
   }
     .holder{
         display: flex;
+        justify-content: space-between;
+       
     }
     .card{
         background-color: #fff;
-        width: 550px;
+        width: 370px;
         height: auto;
-        margin: 20px;
-        
+       overflow: hidden;
     }
     .card-image{
         background-color: #f0be38;
-        height: 250px;
+        height: 270px;
         margin-bottom: 15px;
         background-size: cover;
+        background-size: 100% 100%;
     }
     .card-1{
         background-image: url('SelamBank about us.jpg');
@@ -303,7 +316,12 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 1rem;
+    }
+    .shares .card{
+      width:300px;
+    }
+    .shares .card img{
+       width: 100%;
     }
     .card p{
         color: #979797;
@@ -315,6 +333,12 @@
      display: block;
      margin-left: auto;
      margin-right: auto;
+
+    }
+    @media(max-width:1000px){
+      .holder{
+        flex-wrap: wrap;
+      }
     }
     
     @media(max-width:768px){
@@ -446,9 +470,12 @@
       transition: .5s ease;
       backface-visibility: hidden;
     }
-    
+    .hex-holder{
+      display: flex;
+      justify-content:flex-start;
+      overflow: hidden;
+    }
     .hexagon-gallery {
-        margin-left: -7rem;
         margin-top: 30px;
         max-width: 1000px;
         display: grid;
@@ -658,7 +685,6 @@
         text-align: center;
       }
     
-    
       .hex:first-child {
         grid-row-start: 1;
         grid-column: 1 / span 2;
@@ -713,11 +739,10 @@
         grid-column: 3 / span 2;
       }
     }
+  
     
     
     .contact{
-      padding: 0rem 7%;
-      padding-bottom: 0px;
     }
      .foot{
        padding: 2rem 0%;
@@ -1150,7 +1175,7 @@
       }
     
     }
-    /*
+   
     @media (-webkit-device-pixel-ratio: 1.5) {
       :root {
       zoom: 0.84;
@@ -1165,7 +1190,126 @@
           zoom: 0.76;
           }
         }
-        */
+        
+    
+        @media screen and (min-device-width: 770px) and (max-device-width: 990px){
+          
+           .holder{
+             flex-wrap:wrap;
+           }
+         
+          .hexagon-gallery{
+            align-items: center;
+            padding-left: 7rem;
+          }
+          .hex{
+            width: 180px;
+            height: 195px;
+          }
+          .hex .names .text h1{
+            color: #232b56;
+            font-size: 1rem;
+            text-align: center;
+            text-transform: none;
+          }
+          .hex .names .text p{
+            font-size :.7rem;
+            text-align: center;
+          }
+        
+          .hex:first-child {
+            grid-row-start: 1;
+            grid-column: 1 / span 2;
+          }
+          
+          .hex:nth-child(2) {
+            grid-row-start: 1;
+            grid-column: 3 / span 2;
+  
+          }
+          .hex:nth-child(3) {
+            grid-row-start: 1;
+            grid-column: 5 / span 2;
+          }
+          
+          .hex:nth-child(4) {
+            grid-row-start: 1;
+            grid-column: 7 / span 2;
+          }
+          
+          .hex:nth-child(5) {
+            grid-row-start: 2;
+            grid-column: 2 / span 2;
+          }
+          
+          .hex:nth-child(6) {
+            grid-row-start: 2;
+            grid-column: 4 / span 2;
+          }
+          
+          .hex:nth-child(7) {
+            grid-row-start: 2;
+            grid-column: 6 / span 2;
+          }
+          
+          .hex:nth-child(8) {
+            grid-row-start: 3;
+            grid-column: 1 / span 2;
+          }
+          
+          .hex:nth-child(9) {
+            grid-row-start: 3;
+            grid-column: 3 / span 2;
+          }
+          
+          .hex:nth-child(10) {
+            grid-row-start: 3;
+            grid-column: 5 / span 2;
+          }
+          .hex:nth-child(11) {
+            grid-row-start: 3;
+            grid-column: 7 / span 2;
+          }
+        }
+          
+        @media(min-width:1200px){
+          :root{
+            zoom: 0.6;
+          }
+        }
+        @media(min-width:1020px){
+          :root{
+            zoom:1;
+          }
+        }
+        @media(max-width:350px){
+           :root{
+             zoom: 0.7;
+           }
+        }
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px){
+            :root{
+              zoom: 0.78;
+            }
+        }
+        @media screen and (min-device-width: 910px) and (max-device-width: 1020px){
+          :root{
+            zoom: 0.7;
+          }
+      }
+      @media screen and (min-device-width: 770px) and (max-device-width: 909px){
+        :root{
+          zoom: 1;
+        }
+    }
+
+    @media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+      .holder{
+        flex-wrap: nowrap;
+       
+      }
+    }
+        
     
     
     
