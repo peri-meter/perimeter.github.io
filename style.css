@@ -31,7 +31,12 @@
        padding-top: 25px;
      }
     
-       
+     .top-container{
+      width:100%;
+      max-width:var(--container-width);
+      overflow: hidden;
+     margin: auto; 
+  }   
     
     nav{
       position: sticky;
@@ -254,7 +259,7 @@
     .container{
         width: 100%;
         height: auto;
-        background-color: #efefef;
+        background-color: #f6f6f4;
     }
     .container .content{
       max-width: var(--container-width);
@@ -262,7 +267,7 @@
     }
     .container .content h1{
          color: #232b56;
-         font-size: 32px;
+         font-size: 25px;
          margin-bottom: 10px;
     }
     .container .content .card-btn{
@@ -271,7 +276,7 @@
         border: 0px;
         display: inline-block;
         padding: .5rem 1rem;
-        font-size: 20px;
+        font-size: 15px;
         cursor: pointer;
     }
     .container .content .card-btn:hover{
@@ -555,7 +560,7 @@
     
     .head-org p{
       color: #979797;
-      padding-top: 2rem;
+      margin-top: 2rem;
       text-transform: none;
     
     }
@@ -572,6 +577,7 @@
       display: flex;
       justify-content:flex-start;
       overflow: hidden;
+      
     }
     .hexagon-gallery {
         max-width: 1000px;
@@ -579,8 +585,8 @@
         grid-template-columns: repeat(0, 1fr);
         grid-auto-rows: 150px;
         grid-gap: 14px;
-        padding-bottom: 50px;
-        margin-top: 0px;
+        padding-bottom: 60px;
+        margin-left: -12px;
       }
       .hex  .names{
     
@@ -1084,6 +1090,7 @@
       border-radius: .5rem;
       background:#fff;
       width:40rem;
+      flex-wrap: wrap;
     }
     
     .login-form-container form h3{
@@ -1105,8 +1112,8 @@
     .login-form-container form .btn1{
       display: block;
       width: 100%;
-      padding: 1.5rem;
-      font-size: 1.2rem;
+      padding: 1rem;
+      font-size: 1rem;
       text-align: center;
       color: #232b56;
       background-color: #f0be38;
@@ -1129,9 +1136,15 @@
       position: absolute;
       top:2rem; right:3rem;
       font-size: 3rem;
-      color:#fff;
+      color:#efefef;
       cursor: pointer;
     }
+    @media(max-width:480px){
+      .login-form-container form .btn1{
+        font-size: 1000px;
+      }
+    }
+
     
     
     /*
@@ -1347,9 +1360,10 @@
     }
     @media(max-width:480px){
       html{
-          font-size: 90%;
+          font-size: 80%;
           
       }
+
    
     
     }

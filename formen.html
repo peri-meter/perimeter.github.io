@@ -27,552 +27,183 @@
     
     
     <nav>
-        <div class="menu-icon">
-           <span class="fas fa-bars"></span>
-        </div>
-        <div class="logo">
-          <a href="index.html#home"><img src="Selam.Logo.w.under.formation.png" alt="" width="230"></a>
-        </div>
-        <div class="nav-items">
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#shares">Shares</a></li>
-            <li><a href="index.html#investor">Organizers</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </div>
-        <div class="search-icon">
-           <span class="fas fa-search"></span>
-        </div>
-        <div class="cancel-icon">
-           <span class="fas fa-times"></span>
-        </div>
-        <form action="#">
-           <input type="search" class="search-data" placeholder="Search">
-           <button type="submit" class="fas fa-search"></button>
-        </form>
-     </nav>
-
-     <script>
-        const menuBtn = document.querySelector(".menu-icon span");
-        const searchBtn = document.querySelector(".search-icon");
-        const cancelBtn = document.querySelector(".cancel-icon");
-        const items = document.querySelector(".nav-items");
-        const form = document.querySelector("form");
-
-        window.onscroll = ()=>{
-            items.classList.remove('active');
-           searchBtn.classList.remove("hide");
-           menuBtn.classList.remove("hide");
-           cancelBtn.classList.remove('show');
-           form.classList.remove("active");
-        }
-
-        menuBtn.onclick = ()=>{
-          items.classList.add("active");
-          menuBtn.classList.add("hide");
-          searchBtn.classList.add("hide");
-          cancelBtn.classList.add("show");
-        }
-        items.onclick = () =>{
-           items.classList.remove('active');
-           searchBtn.classList.remove("hide");
-           menuBtn.classList.remove("hide");
-           cancelBtn.classList.remove('show');
-       }
-        cancelBtn.onclick = ()=>{
-          items.classList.remove("active");
-          menuBtn.classList.remove("hide");
-          searchBtn.classList.remove("hide");
-          cancelBtn.classList.remove("show");
-          form.classList.remove("active");
-          cancelBtn.style.color = "#232b56";
-        }
-        searchBtn.onclick = ()=>{
-          form.classList.add("active");
-          searchBtn.classList.add("hide");
-          cancelBtn.classList.add("show");
-        }
-     </script>
-
-<style>
-.share-form{
-  padding: 6rem 7%;
-  padding-bottom: 1rem;
-}
-
-.head-form{
-display: flex;
-flex-wrap: wrap;
-}
-.head-form img{
-height: 55px;
-}
-.head-form h1{
-flex: 1;
-color: #232b56;
-display: flex;
-padding: 10px 0 0 18px;
-font-size: 2rem;
-}
-.head-form span{
-height: 40px;
-font-size: 3rem;
-padding: 6px 0 0 15px;
-}
-.form-container{
- display: flex;
- overflow: hidden;
- flex-wrap: wrap;
-}
-.first-row{
- display: flex;
- flex-wrap: wrap;
- flex-direction: row;
-
-}
-.first-row .left{
- background: #fff;
- flex-wrap: wrap;
-}
-.upload{
- background: #fff;
- flex-wrap: wrap;
-}
-
-.upload h3{
- color: #232b56;
- font-size: 1.5rem;
- text-transform: capitalize;
- padding-top: 3rem;
-
-}
-.form-container div{
- font-size: 2vw;
-padding: 0em;
-color: white;
-flex: 1;
-}
-label{
- color: #232b56;
- font-size: 1rem;
- font-weight: bold;
-}
-
-
-
-
-
-
-input[type=text], select {
-width: 100%;
-padding: 12px 35px;
-margin: 1px 0;
-display: block;
-border: 1px solid #efefef;
-border-radius: 20px;
-box-sizing: border-box;
-background: #efefef;
-}
-input[type=number], select {
-width: 100%;
-padding: 12px 70px;
-margin: 1px 0;
-display: block;
-border: 1px solid #efefef;
-border-radius: 20px;
-box-sizing: border-box;
-background: #efefef;
-}
-input[type=tel], select {
-width: 100%;
-padding: 12px 35px;
-margin: 1px 0;
-display: block;
-border: 1px solid #efefef;
-border-radius: 20px;
-box-sizing: border-box;
-background: #efefef;
-}
-
-input[type=submit] {
-width: 100%;
-background-color: #f0be38;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-font-size: large;
-}
-input[type=submit]:hover{
-background-color: #232b56;
-color: #f0be38;
-}
-input[type=button]{
-background-color: #f0be38;
-color: #232b56;
-font-weight: bold;
-width: 250px;
-padding: 5px 10px;
-margin-left:190px ;
-cursor: pointer;
-} 
-
-input[type=button]:hover{
-color: #f0be38;
-background-color: #232b56;
-}
-
-
-#drop_file_zone {
-background-color: #efefef;
-border: #979797 5px dashed;
-width: 640px;
-height: 510px;
-padding: 8px;
-font-size: 18px;
-border-radius: 10px;
-}
-#drag_upload_file {
-width:100%;
-margin:0 auto;
-}
-.drag p {
-text-align: center;
-color: #232b56;
-font-size: 1rem;
-font-weight: bold;
-padding-top: 10rem;
-}
-
-#drag_upload_file #selectfile {
-display: none;
-}
-.first-row .left{
-padding-top: 2rem;
-}
-
-
-
-
-.ser-char a:hover{
-  color: #232b56;
-}
-@media(max-width:480px){
-
-
-.head-form h1{
-padding-top: 0rem;
-}
-
-#drop_file_zone {
-
-width: 400px;
-height: 230px;
-padding: 8px;
-
-}
-
-.drag p {
-text-align: center;
-color: #232b56;
-font-size: 1rem;
-font-weight: bold;
-padding-top: 3rem;
-}
-input[type=button]{
-background-color: #f0be38;
-color: #232b56;
-font-weight: bold;
-width: 250px;
-padding: 5px 10px;
-margin-left:65px ;
-cursor: pointer;
-} 
-}
-</style>    
-
-
-        <section class="share-form">
-            <div class="head-form">
-                <img src="SB Logo_Housing.pattern.png" alt="" width="50">
-               
-                <h1>  Share Subscription form 
-                  </h1>
-             </div>
-            <div class="form-container">
-                <div class="first-row">
-                      
-                    <div class="left">
-                        <form action="/" method="post" autocomplete="on">
-                            <div class="f_name" style="float: left;">
-                                <label for="fname">First Name</label>
-                                <input id="user_first_name" name="user[first_name]" size="30" type="text" required />
-                              </div>
-
-
-                              <div class="l_name" style="float: left;">
-                                <label for="lname">Last Name</label>
-                                <input id="user_last_name" name="user[last_name]" size="30" type="text" required />
-                              </div>
-                              <div class="city" style="float: left;">
-                                <label for="city_name">City</label>
-                                <input id="User_city" name="user[city]" size="30" type="text" placeholder="eg: Addis Abeba" required  />
-                              </div>
-                              <div class="subcity" style="float: left;">
-                                <label for="sub-city">Sub City</label>
-                                <input id="user_sub_city" name="user[sebcity]" size="7" type="text" placeholder="eg: kirkos" required />
-                              </div>
-                              <div class="kebele" style="float: left; padding-left: 10px; width: 20%; ">
-                                <label for="wereda">Wereda</label>
-                                <input id="user_wereda" name="user[wereda]" size="7" type="number" required />
-                              </div>
-
-                              <div class="phone" style="float: left;">
-                                <label for="phone">Phone Number</label>
-                                <input id="phone_num" name="user[phone_num]" size="30" type="tel" placeholder="+251..." required />
-                              </div>
-
-                              <div class="mail" style= "float: left; ">
-                                  <label for="email">Email</label>
-                                  <input id="user_email" name="user[email]" size="30" type="text" placeholder="example@gmail.com" required/>
-                              </div>
-                              <div class="share-num" style="float: left; clear : both;">
-                                <label for="share">Number of Shares</label>
-                                <input id="share_num" name="share" type="number" placeholder="min: 10 - max: 100,000" required/>
-                            </div>
-                            <div class="share-value" style="float: left;">
-                                <label for="share-val">Purchased Share Value in Birr</label>
-                                <input id="share_value" name="value" size="30"  type="text" placeholder="10,000 birr - 100,000,000 birr" required/>
-                            </div>
-                          <div>  <p style="color: #f0be38; font-size: 1rem; float: left;"> *Add Info of the bank where you made payment. </p></div>
-                            <div class="Bank-name" style="float: left; ">
-                                <label for="bank_name">Bank Name</label>
-                                <select name="banks" id="name-banks">
-                                    <option value="abay">Abay Bank</option>
-                                    <option value="awash">Awash Bank</option>
-                                    <option value="abyssinia">Abyssinia Bank</option>
-                                    <option value="cbe">Commercial Bank</option>
-                                    <option value="coop">Cooperative Bank of Oromia</option>
-                                    <option value="dashin">Dashin Bank</option>
-                                    <option value="hibret">Hibret</option>
-                                    <option value="lion">Lion Bank</option>
-                                    <option value="nib">Nib Bank</option>
-                                    <option value="oromia">Oromia Bank</option>
-                                    <option value="zemen">Zemen Bank</option>
-                                </select>
-                                 </div>
-                                
-                              
-                            
-                              <div class="bank-number" style="float: left;">
-                                <label for="bank-num">Bank Account Number</label>
-                                <input id="bank_number" name="bank_num" type="number" required/>
-                            </div>
-                          
-                            <div class="ser-char">  <p style="color: #f0be38; font-size: 1rem; float: left;"> *5% Service Charge should be paid. <a href="index.html#payment"> <strong style="color: #f0be38;  text-decoration: underline;">Check Bank's Info</strong> </a></p></div>
-                               
-                              <div style="float: left; width: 90%;">
-                                  <label for="service">Service Charge</label>
-                                  <input type="number" id="service_charge"  placeholder="Share Service Amount" required />
-                              </div>
-
-                            <div class="agent-name" style="float: left; clear : both;">
-                                <label for="aname">Agent Full Name</label>
-                                <input id="a_name" name="a-name" size="30" type="text" required/>
-                            </div>
-                    
-                            <div class="aphone" style="float: left;">
-                                <label for="aphone">Agent's Phone Number</label>
-                                <input id="aphone_num" name="user[aphone_num]" size="30" type="tel" required />
-                              </div>
-                              
-                             
-                           
-                             
-                             
-                               
-                    </div>
-                <!--
-                
-                    <div class="right"><h1>
-                        <div class="l_name">
-                            <label for="lname">Last Name</label>
-                            <input id="user_last_name" name="user[last_name]" size="30" type="text" required />
-                          </div>
-                          <div class="subcity" style="float: left;">
-                            <label for="sub-city">Sub City</label>
-                            <input id="user_sub_city" name="user[sebcity]" size="7" type="text" required />
-                          </div>
-                          <div class="kebele" style="float: left; padding-left: 10px; ">
-                            <label for="wereda">Wereda</label>
-                            <input id="user_wereda" name="user[wereda]" size="7" type="text" required />
-                          </div>
-                          <div class="mail" style= "float: left; padding-top:0.5rem;">
-                              <label for="email">Email</label>
-                              <input id="user_email" name="user[email]" size="30" type="text" required/>
-                          </div>
-                          <div class="share-value" style="float: left;">
-                              <label for="share-val">Purchased Share Value in Birr</label>
-                              <input id="share_value" name="value" size="30"  type="text" required/>
-                          </div>
-                          <div class="bank-number" style="float: left;">
-                            <label for="bank-num">Bank Account Number</label>
-                            <input id="bank_number" name="bank_num"  type="number" required/>
-                        </div>
-                        <div class="aphone" style="float: left;">
-                            <label for="aphone">Agent's Phone Number</label>
-                            <input id="aphone_num" name="user[aphone_num]" size="30" type="tel" required />
-                          </div>
-                    </div>
-                </div>-->
-            
-                <div class="upload">
-                
-                    <h3>
-                        Identification | Upload necessary documents
-                    </h3>
-                   
-                    <div id="drop_file_zone" ondrop="upload_file(event)" ondragover="return false">
-                      <div class="drag" id="drag_upload_file">
-                          <p class="upp">Upload ID or Driving Licence and </br>Payment Receipt</p>
-                          
-                          <input type="button" value="Select File(s)" onclick="file_explorer();" />
-                          <input type="file" id="selectfile" multiple />
-                      </div>
-                  </div>
-                      <input type="submit" value="Submit">
-                </div>
+        <div class="nav-container">
+            <div class="menu-icon">
+               <span class="fas fa-bars"></span>
+            </div>
+            <div class="logo">
+                <a href="index.html#home"><img src="Selam.Logo.w.under.formation.png" alt="" width="230"></a>
+              </div>
+              <div class="nav-items">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#shares">Shares</a></li>
+                <li><a href="index.html#investor">Organizers</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </div>
+            <div class="search-icon">
+               <span class="fas fa-search"></span>
+            </div>
+            <div class="cancel-icon">
+               <span class="fas fa-times"></span>
+            </div>
+            <form action="#">
+               <input type="search" class="search-data" placeholder="Search">
+               <button type="submit" class="fas fa-search"></button>
             </form>
             </div>
-
-
-        </section>
-
-        <div style="padding: 1rem 7%; text-align: center; color: #232b56; font-weight: bold;">
-            <p>We provide gide for filling share application on Phone Number : +251 96 691 9695</p>
-        </div>
-
-       
- 
-
-        
-    <!--
-
-
-    
-     <style>
-
-         .book {
-             padding: 5rem 7%;
-             padding-bottom: 2rem;
-         }
-         
-.book .row{
-  display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
-  align-items: center;
-}
-
-
-
-.book .row form{
-  flex:1 1 40rem;
-  padding:2rem;
-  margin-top:  0rem;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-  border-radius: .5rem;
-}
-.book .row form h5 {
-                 color: #333;
-                 text-align: center;
-                 font-size: 1rem;
-                 margin-top: 1rem;
-             }
+     </nav>
+     <div class="top-container">
+        <script>
+           const menuBtn = document.querySelector(".menu-icon span");
+           const searchBtn = document.querySelector(".search-icon");
+           const cancelBtn = document.querySelector(".cancel-icon");
+           const items = document.querySelector(".nav-items");
+           const form = document.querySelector("form");
+   
+           window.onscroll = ()=>{
+               items.classList.remove('active');
+              searchBtn.classList.remove("hide");
+              menuBtn.classList.remove("hide");
+              cancelBtn.classList.remove('show');
+              form.classList.remove("active");
+           }
+   
+           menuBtn.onclick = ()=>{
+             items.classList.add("active");
+             menuBtn.classList.add("hide");
+             searchBtn.classList.add("hide");
+             cancelBtn.classList.add("show");
+           }
+           items.onclick = () =>{
+              items.classList.remove('active');
+              searchBtn.classList.remove("hide");
+              menuBtn.classList.remove("hide");
+              cancelBtn.classList.remove('show');
+          }
+           cancelBtn.onclick = ()=>{
+             items.classList.remove("active");
+             menuBtn.classList.remove("hide");
+             searchBtn.classList.remove("hide");
+             cancelBtn.classList.remove("show");
+             form.classList.remove("active");
+             cancelBtn.style.color = "#232b56";
+           }
+           searchBtn.onclick = ()=>{
+             form.classList.add("active");
+             searchBtn.classList.add("hide");
+             cancelBtn.classList.add("show");
+           }
+        </script>
             
-             .book .row form h6{
-                 color: #232b56;
-                 font-size: 1rem;
-                 font-weight: bold;
-             } 
-             .book .row form ul li{
-                text-decoration: none;
-                 font-size: 1rem;
-                 font-family:'Montserrat', sans-serif;
-                 color: #232b56;
-                 font-weight: 300;
-                 margin: 1rem 1rem 1rem 0;
-             }
-             .book .row form ul li a{
-                 color: #f0be38;
-                 font-weight: bold;
-                
-             }
-             .book .row form ul li a:hover{
-                 color: #232b56;
-
-             }
-              .book .row form p{
-                  color: #232b56;
-                  font-size: 1rem;
-                  padding: 1rem 1rem 2rem 0;
-              }
+            <style>
+            .head-about h1{
+           font-size: 18px;
+           padding-top: 5px;
+       }
+            .book {
+               padding: 0rem;
+               padding-bottom: 1rem;
+           }
+           
+   .book .row{
+    align-items: center;
+   
+   }
+   @media(max-width:1000px){
+       .book .row{
+           margin: 0px 25px;
+       }
+   }
+   
+   
+   .book .row{
+    margin-top:  0rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+   }
+   .book .row h5 {
+                   color: #232b56;
+                   text-align: start;
+                   font-size: 18px;
+               }
               
- .down-btn{
-  width: 100%;
-  background-color: #f0be38;
-  color: white;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 0px;
-  cursor: pointer;
-  font-size: large;
-}
-.down-btn:hover{
-    background-color: #232b56;
-    color: #f0be38;
-}
-
-     </style>
-     <section class="book" id="book">
-
-        <div class="head-about" style="padding-top: 1.5rem;">
-            <img src="SB-Logo-For Typography.png" alt="" width="30">
-            <h1>Share Application</h1>
-        </div>
-
-<div class="row">
-
-
-    <form action="">
-        <p>The par value of one share is 1,000 birr and the total number of shares available shall be 5,000,000.
+               .book .row h6{
+                   color: #232b56;
+                   font-size: 1rem;
+                   font-weight: bold;
+               } 
+               .book .row ul li{
+                   
+                   font-size: 1rem;
+                   font-family:'Montserrat', sans-serif;
+                   color: #232b56;
+                   font-weight: 500;
+                   margin: 1rem 1rem 1rem 0;
+               }
+               .book .row ul li a{
+                   color: #f0be38;
+                   font-weight: bold;
+                   
+               }
+               .book .row ul li a:hover{
+                   color: #232b56;
+   
+               }
+                .book .row p{
+                    color: #232b56;
+                    font-size: 1rem;
+                    padding: 1rem 1rem 2rem 0;
+                }
+                
+   .down-btn{
+    width: 100%;
+    background-color: #f0be38;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: large;
+   }
+   .down-btn:hover{
+      background-color: #232b56;
+      color: #f0be38;
+   }
+   
+       </style>
+       <section class="book" id="book">
+   
+           <div class="head-about" style="padding-top: 1.5rem;">
+               <img src="SB-Logo-For Typography.png" alt="" width="30">
+               <h1>Share Subscription Form</h1>
+           </div>
+   
+   <div class="row">
+   
+          <p>The par value of one share is 1,000 birr and the total number of shares available shall be 5,000,000.
             The minimum number of shares that can be bought shall be 10 shares worth 10,000 birr and the maximum number of shares that can be bought shall be 500,000 shares worth 500,000,000 birr.
              You can either pay a full payment deposit or pay 50% of your pledged shares and pay the rest within six months of the bank's establishment.</p>
-        <h5>Steps to take</h5>
-    <ul>
-        <li>Fill the form after downloading</li>
-        <li>Pay Amount through <a href="index.html#payment">Listed Bank</a></li>
-        <li>Attach necessary documents (Completed Form, Receipt, Identification)</li>
-    </ul>
-        <h5>Send Files through</h5>
-         
-             <p>investor.relations@selambanket.com </p> 
-             <h6>Or Deliver in person at Selam Bank HQ</h6>
-           <p> Addis Ababa ,Ethiopia ,Kazanchis, Tito st , In front of oilibya </br>
-                Genet W/yohnes 2nd floor, Office no. 201 </p>
-         
-                <button class="down-btn" type="submit" onclick="window.open('Selam Bank Share Subscription Form English..pdf')">Download form</button>
-    </form>
-
-</div>
-
-</section>
-
--->
-
+             <h5>Steps to take</h5>
+             <ul>
+                 <li>Fill the form after downloading</li>
+                 <li>Pay Amount through <a href="#diaspora">Listed Bank</a></li>
+                 <li>Attach necessary documents (Completed Form, Receipt, Identification)</li>
+             </ul>
+                 <h5>Send Files through</h5>
+                  
+                      <p>investor.relations@selambanket.com </p> 
+                      <h6>Or Deliver in person at Selam Bank HQ</h6>
+                      <p> Addis Ababa ,Ethiopia ,Kazanchis, Tito st , In front of oilibya </br>
+                         Genet W/yohnes 2nd floor, Office no. 201 </p>
+                  
+                         <button class="down-btn" type="submit" onclick="window.open('SHARE SUBSCRIPTION FORM_DIASPORA_INDIVIDUAL.pdf')">Download form</button>
+             
+   </div>
+   
+   </section>
+        </div>
 <section class="foot">
     <footer>
         <div class="footer-img">
@@ -595,7 +226,7 @@ cursor: pointer;
             <div class="content-box">
                 <img src="Selam.Location.png" alt="" width="30">
                 <div>
-                    <p style="text-align: center;">Kazanchis, Next to oilibya, Genet Bldg, 
+                    <p style="text-align: center;">Kazanchis, In Front Of oilibya, Genet Bldg, 
                         2<sub style="vertical-align: super; font-size: x-small;">nd</sub> Floor, Office No. 201,
                          Addis Ababa, Ethiopia </p>
                 </div>
