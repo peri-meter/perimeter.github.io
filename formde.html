@@ -99,16 +99,16 @@
   <style>
     .app-holder{
         display: flex; 
-       flex-direction: row;
+       flex-direction: column;
         flex-wrap: wrap;
     }
     .form-container{
         flex: 1;
-       flex-wrap: wrap;
+      
        flex-direction: column;
     }
   .upload-container{
-      flex: 1;
+    
      
   }
   form > div{
@@ -118,13 +118,20 @@
     .form-row{
           width: 100%;
           display: flex;
-          flex-wrap: wrap;         
+          flex-wrap: wrap; 
+          flex-direction: row;     
           justify-content: space-between;
       }
 .form-row > div{
           width:100%;
-          width: 290px;
+          flex: 1;
+          flex-wrap: wrap;
+         flex-direction: row;
   
+      }
+      label{
+          color: #232b56;
+          font-weight: 700;
       }
       input[type=text], select {
       width: 100%;
@@ -211,22 +218,15 @@ background-color: #232b56;
 background-color: #efefef;
 border: #979797 5px dashed;
 width: 100%;
-width: 100px;
-min-height: 570px;
+height: 200px;
 padding: 8px;
 font-size: 18px;
 border-radius: 10px;
 }
-#drag_upload_file {
-margin:0 auto;
-}
-.drag{
-display: block;
 
-position: sticky;
-top: 45%;
-transform: translateY(-50%);
-margin: 0 auto;
+.drag{
+display:block;
+margin-top: 50px;
 }
 .drag p {
 text-align: center;
@@ -259,6 +259,7 @@ input[type=submit] {
    @media(max-width:1000px){
        .top-container{
            margin: 0 25px;
+           margin-right: 25px;
        }
        .head-about{
            margin: 0px -25px !important;
@@ -267,7 +268,18 @@ input[type=submit] {
            font-size: 18px;
            padding-top: 5px;
        }
-   }   
+       .app-holder{
+        margin: 0 25px; 
+       }
+   }  
+   @media(max-width:300px){
+       .top-container{
+           margin: 0px 0px;
+       }
+       .app-holder{
+        margin: 0 0px; 
+       }
+   } 
 </style>
 
 <div class="head-about" style="margin-top: 10px; margin-bottom: -25px;">
