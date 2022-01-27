@@ -422,10 +422,10 @@
       }
 
       .container .content h1{
-        font-size: 25px;
+        font-size: 24px;
       }
       .container .content .card-btn{
-        font-size: 15px;
+        font-size: 13px;
       }
       .head-about{
         padding: 0px 27px;
@@ -443,11 +443,11 @@
      }
      .share-logo img{
        margin-bottom: 10px ;
-       width: 270px;
+      
      }
      .shares .card img{
        margin: 20px 0px;
-       width: 240px;
+     
       margin-left: auto;
       margin-right: auto;
 
