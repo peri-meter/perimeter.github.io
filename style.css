@@ -464,9 +464,9 @@
      }
   
     }
-    @media(max-width:370px){
+    @media(max-width:400px){
       .card-image {
-        height: 190px;
+        height: 200px;
       }
     }
   
@@ -1158,7 +1158,7 @@
         font-size: 13px;
       }
       .login-form-container form .btn1 strong{
-        font-size: 30px !important;
+        font-size: 27px !important;
       }
     }
     @media(max-width:285px){

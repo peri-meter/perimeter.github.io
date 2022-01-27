@@ -28,8 +28,8 @@ execQuery("CREATE TABLE shares (
         passportnumber VARCHAR(255) NULL,
         yellowcardNumber VARCHAR(255) NULL,
         subscribedamount VARCHAR(255) NULL,
-        servicecharge VARCHAR(255) NULL,
         paidmount VARCHAR(255) NULL,
+        servicecharge VARCHAR(255) NULL,
         agentname VARCHAR(255) NULL,
         agentphone VARCHAR(255) NULL,
         remark DATE
@@ -43,7 +43,7 @@ execQuery("CREATE TABLE shares (
 $conn3 = new mysqli($GLOBALS['servername'], $GLOBALS['username'], $GLOBALS['password'],$GLOBALS['DBName']);
 if ($conn3->connect_error) die("Connection failed: " . $conn3->connect_error);
 $insertCommand = $conn3->prepare("INSERT INTO shares VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW())");
-$insertCommand->bind_param("ssssssssssssssss",$fname,$lname,$phone,$email,$nationality,$country,$city,$state,$zipcode,$passportnumber,$yellowcardnumber,$paidamount,$agentname,$agentphone,$subscribedamount,$servicecharge);
+$insertCommand->bind_param("ssssssssssssssss",$fname,$lname,$phone,$email,$nationality,$country,$city,$state,$zipcode,$passportnumber,$yellowcardnumber,$subscribedamount,$paidamount,$servicecharge,$agentname,$agentphone,);
 $fname = $_POST['first_name'];
 $lname = $_POST['last_name'];
 $phone = $_POST['user_phone_number']; 
@@ -79,6 +79,6 @@ if(!empty($_FILES['upload_img']['name'])){
         $insertCommand->execute();
     }
 }
-header( "Location: thank_you.html" );
+header( "Location: confirmshare.html" );
 
     ?>
