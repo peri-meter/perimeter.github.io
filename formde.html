@@ -256,17 +256,16 @@ input[type=submit] {
       background-color: #232b56;
       color: #f0be38;
       }
-      section{
-          margin-top: 20px;
-      }
-     
    @media(max-width:1000px){
-     
-      .head-about{
-           padding: 0px 25px;
+       .top-container{
+           margin: 0 25px;
+           margin-right: 25px;
+       }
+       .head-about{
+           margin: 0px -25px !important;
        }
        .head-about h1{
-           font-size: 16px;
+           font-size: 18px;
            padding-top: 5px;
        }
        .app-holder{
@@ -292,16 +291,16 @@ input[type=submit] {
 <section>
     <div class="app-holder">
          <div class="form-container">
-             <form action="">
+             <form action="register.php" method="post" enctype="multipart/form-data">
               <div class="form-row">
                   <div class="fname">
                       <label for="fname">First Name</label>
-                      <input id="user_first_name" name="user[first_name]"  type="text" required />
+                      <input id="user_first_name" name="first_name"  type="text" required />
                     </div>
                     
                     <div class="lname">
                       <label for="lname">Last Name</label>
-                      <input id="user_last_name" name="user[last_name]"  type="text" required />
+                      <input id="user_last_name" name="last_name"  type="text" required />
                     </div>
                  </div>
                  <div class="form-row">
@@ -843,25 +842,24 @@ input[type=submit] {
             
               <div class="paid">
                   <label for="sub-paid">Paid Amount</label>
-                  <input id="user_paid" name="share-sub" type="number" required placeholder=""/>
+                  <input id="user_paid" name="paid-amount" type="number" required placeholder=""/>
               </div>
               <div class="service">
                   <label for="service-charge">Service Charge</label>
-                  <input id="user_paid" name="share-sub" type="number" required placeholder="5% of the subscriped amount"/>
+                  <input id="user_paid" name="service-charge" type="number" required placeholder="5% of the subscriped amount"/>
               </div>
           </div>
           <div class="form-row">
               <div class="aname">
                   <label for="a-name">Agent's Full Name</label>
-                  <input id="user_agent_name" name="user[agent_name]"  type="text" required />
+                  <input id="user_agent_name" name="agent_name"  type="text" required />
                 </div>
                 
                 <div class="aphone">
                   <label for="a-phone">Agent's Phone Number</label>
-                  <input id="user_agent_phone" name="user[agent_phone]"  type="tel" required />
+                  <input id="user_agent_phone" name="agent_phone"  type="tel" required />
                 </div>
           </div>
-             </form>
          </div>
 
          <div class="upload-container">
@@ -874,11 +872,12 @@ input[type=submit] {
                 <p class="upp">Upload ID or Driving Licence and </br>Payment Receipt</p>
                 
                 <input type="button" value="Select File(s)" onclick="file_explorer();" />
-                <input type="file" id="selectfile" multiple />
+                <input name="upload_img[]" accept="image/*" type="file" id="selectfile" multiple required/>
             </div>
         </div>
             <input type="submit" value="Submit">
       </div>
+    </form>
          </div>
 </section>
    </div>
