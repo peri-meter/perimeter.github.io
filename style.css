@@ -435,7 +435,6 @@
       .container .content{
         margin: 0px 25px;
       }
-
       .container .content h1{
         font-size: 24px;
       }
@@ -493,8 +492,8 @@
       font-weight: 500;
       font-size: 16px;
       text-transform: none;
-     
       text-align: justify;
+   
     }
     .head-share h1 {
         padding-bottom: 15px;
@@ -588,7 +587,8 @@
       color: #979797;
       margin-top: 2rem;
       text-transform: none;
-    
+      text-align: justify;
+      font-weight: 500;
     }
     .hex img {
       opacity: 1;
@@ -1407,6 +1407,12 @@
     @media(max-width:480px){
       html{
           font-size: 80%;
+          
+      }
+    }
+    @media(max-width:300px){
+      html{
+          font-size: 65%;
           
       }
     }

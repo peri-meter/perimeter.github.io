@@ -15,11 +15,11 @@ function execQuery($command){
   $conn2->close();
 }
 execQuery("CREATE TABLE shares (
-        shareId       INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        firstname        VARCHAR(255) NULL,
-        lastname        VARCHAR(255) NULL,
-        phone        VARCHAR(255)  NULL,
-        email VARCHAR(255) NULL,
+        shareId   INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        firstname VARCHAR(255) NULL,
+        lastname  VARCHAR(255) NULL,
+        phone     VARCHAR(255)  NULL,
+        email     VARCHAR(255) NULL,
         nationality VARCHAR(255) NULL,
         country VARCHAR(255) NULL,
         city VARCHAR(255) NULL,
@@ -27,9 +27,11 @@ execQuery("CREATE TABLE shares (
         zipcode VARCHAR(255) NULL,
         passportnumber VARCHAR(255) NULL,
         yellowcardNumber VARCHAR(255) NULL,
+        currency VARCHAR(255) NULL,
+        Numberof Shares VARCHAR(255) NULL,
         subscribedamount VARCHAR(255) NULL,
-        paidmount VARCHAR(255) NULL,
         servicecharge VARCHAR(255) NULL,
+        paidmount VARCHAR(255) NULL,
         agentname VARCHAR(255) NULL,
         agentphone VARCHAR(255) NULL,
         remark DATE
@@ -42,19 +44,21 @@ execQuery("CREATE TABLE shares (
 )");
 $conn3 = new mysqli($GLOBALS['servername'], $GLOBALS['username'], $GLOBALS['password'],$GLOBALS['DBName']);
 if ($conn3->connect_error) die("Connection failed: " . $conn3->connect_error);
-$insertCommand = $conn3->prepare("INSERT INTO shares VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW())");
-$insertCommand->bind_param("ssssssssssssssss",$fname,$lname,$phone,$email,$nationality,$country,$city,$state,$zipcode,$passportnumber,$yellowcardnumber,$subscribedamount,$paidamount,$servicecharge,$agentname,$agentphone,);
+$insertCommand = $conn3->prepare("INSERT INTO shares VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?NOW())");
+$insertCommand->bind_param("ssssssssssssssssss",$fname,$lname,$phone,$email,$nationality,$country,$city,$state,$zipcode,$passportnumber,$yellowcardnumber,$currency,$numshare,$subscribedamount,$servicecharge,$paidamount,$agentname,$agentphone,);
 $fname = $_POST['first_name'];
 $lname = $_POST['last_name'];
 $phone = $_POST['user_phone_number']; 
 $email = $_POST['email_address'];
 $nationality = $_POST['nationality'];
-$country = $_POST['country'];
+$country = $_POST['country']; 
 $city =  $_POST['city'];
 $state =  $_POST['state'];
 $zipcode =  $_POST['postal'];
 $passportnumber =   $_POST['pass-port'];
 $yellowcardnumber =  $_POST['yellow-card'];
+$currency = $_POST['currency'];
+$numshare = $_POST['number-of-share'];
 $paidamount =   $_POST['paid-amount'];
 $agentname =  $_POST['agent_name'];
 $agentphone =  $_POST['agent_phone'];
@@ -82,3 +86,4 @@ if(!empty($_FILES['upload_img']['name'])){
 header( "Location: confirmshare.html" );
 
     ?>
+    
