@@ -1,7 +1,7 @@
 <?php $servername = "localhost";
-$username = "root";
-$password = "";
-$DBName = 'selambanksc';
+$username = "selamban_hiruy";
+$password = "Newjw.org5522";
+$DBName = 'selamban_register';
 
 $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
