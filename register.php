@@ -1,7 +1,7 @@
 <?php $servername = "localhost";
 $username = "root";
 $password = "";
-$DBName = 'selambank';
+$DBName = 'selambanksc';
 
 $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
@@ -15,11 +15,11 @@ function execQuery($command){
   $conn2->close();
 }
 execQuery("CREATE TABLE shares (
-        shareId   INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        firstname VARCHAR(255) NULL,
-        lastname  VARCHAR(255) NULL,
-        phone     VARCHAR(255)  NULL,
-        email     VARCHAR(255) NULL,
+        shareId       INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        firstname        VARCHAR(255) NULL,
+        lastname        VARCHAR(255) NULL,
+        phone        VARCHAR(255)  NULL,
+        email VARCHAR(255) NULL,
         nationality VARCHAR(255) NULL,
         country VARCHAR(255) NULL,
         city VARCHAR(255) NULL,
@@ -28,13 +28,13 @@ execQuery("CREATE TABLE shares (
         passportnumber VARCHAR(255) NULL,
         yellowcardNumber VARCHAR(255) NULL,
         currency VARCHAR(255) NULL,
-        Numberof Shares VARCHAR(255) NULL,
+        numofShares VARCHAR(255) NULL,
         subscribedamount VARCHAR(255) NULL,
-        servicecharge VARCHAR(255) NULL,
         paidmount VARCHAR(255) NULL,
+        servicecharge VARCHAR(255) NULL,
         agentname VARCHAR(255) NULL,
         agentphone VARCHAR(255) NULL,
-        remark DATE
+        paydate DATE
    )");
    execQuery("CREATE TABLE images (
     imageId       INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -44,14 +44,14 @@ execQuery("CREATE TABLE shares (
 )");
 $conn3 = new mysqli($GLOBALS['servername'], $GLOBALS['username'], $GLOBALS['password'],$GLOBALS['DBName']);
 if ($conn3->connect_error) die("Connection failed: " . $conn3->connect_error);
-$insertCommand = $conn3->prepare("INSERT INTO shares VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?NOW())");
-$insertCommand->bind_param("ssssssssssssssssss",$fname,$lname,$phone,$email,$nationality,$country,$city,$state,$zipcode,$passportnumber,$yellowcardnumber,$currency,$numshare,$subscribedamount,$servicecharge,$paidamount,$agentname,$agentphone,);
+$insertCommand = $conn3->prepare("INSERT INTO shares VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW())");
+$insertCommand->bind_param("ssssssssssssssssss",$fname,$lname,$phone,$email,$nationality,$country,$city,$state,$zipcode,$passportnumber,$yellowcardnumber,$currency,$numshare,$subscribedamount,$paidamount,$servicecharge,$agentname,$agentphone);
 $fname = $_POST['first_name'];
 $lname = $_POST['last_name'];
 $phone = $_POST['user_phone_number']; 
 $email = $_POST['email_address'];
 $nationality = $_POST['nationality'];
-$country = $_POST['country']; 
+$country = $_POST['country'];
 $city =  $_POST['city'];
 $state =  $_POST['state'];
 $zipcode =  $_POST['postal'];
@@ -86,4 +86,3 @@ if(!empty($_FILES['upload_img']['name'])){
 header( "Location: confirmshare.html" );
 
     ?>
-    
